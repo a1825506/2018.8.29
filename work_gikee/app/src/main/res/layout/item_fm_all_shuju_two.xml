@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/item_fm_all_shuju_two_content"
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="@mipmap/all_shuju_104">
+
+        <!--<View-->
+            <!--android:layout_width="178dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_margin="@dimen/dp_10"-->
+            <!--android:background="@mipmap/linechart_bg" />-->
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/item_fm_all_shuju_two_linechart"
+            android:layout_width="184dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp_12" />
+
+
+        <ImageView
+            android:id="@+id/item_fm_all_shuju_two_icon"
+            android:layout_width="12dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_toRightOf="@+id/item_fm_all_shuju_two_linechart"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/all_shuju_huoyue" />
+
+        <TextView
+            android:id="@+id/item_fm_all_shuju_two_name"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_toRightOf="@+id/item_fm_all_shuju_two_icon"
+            android:layout_toLeftOf="@+id/item_fm_all_shuju_two_per"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:paddingLeft="@dimen/dp_5"
+            android:textColor="@color/gray_86"
+            android:textSize="@dimen/sp_11" />
+
+        <com.gikee.app.views.MyTextView
+            android:id="@+id/item_fm_all_shuju_two_per"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center"
+            android:paddingRight="@dimen/dp_10"
+            android:textColor="@color/red"
+            android:textSize="@dimen/sp_10" />
+
+        <com.gikee.app.views.MyTextView
+            android:id="@+id/item_fm_all_shuju_two_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/item_fm_all_shuju_two_name"
+            android:drawablePadding="@dimen/dp_5"
+            android:drawableRight="@mipmap/icon_today"
+            android:paddingRight="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_5"
+            android:textColor="@color/appcolors"
+            android:textSize="@dimen/sp_20" />
+
+        <com.gikee.app.views.MyTextView
+            android:id="@+id/item_fm_all_shuju_two_num_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="@dimen/dp_5"
+            android:drawableRight="@mipmap/icon_yesterday"
+            android:paddingBottom="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_10"
+            android:textColor="@color/gray_toolbar"
+            android:textSize="@dimen/sp_20" />
+    </RelativeLayout>
+</RelativeLayout>

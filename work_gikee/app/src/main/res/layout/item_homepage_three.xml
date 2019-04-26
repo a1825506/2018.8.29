@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dp_10"
+    android:paddingLeft="@dimen/dp_10"
+    android:paddingRight="@dimen/dp_10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="@drawable/layout_ridus5"
+        android:padding="@dimen/dp_10">
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/item_homepage_three_piechart"
+            android:layout_width="170dp"
+            android:layout_height="170dp">
+
+        </com.github.mikephil.charting.charts.PieChart>
+
+        <TextView
+            android:id="@+id/item_homepage_three_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/item_homepage_three_piechart"
+            android:text="@string/newtop100"
+            android:textColor="@color/gray_toolbar"
+            android:textSize="@dimen/sp_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/item_homepage_three_title"
+            android:layout_toRightOf="@+id/item_homepage_three_piechart"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <com.gikee.app.views.MyTextView
+                    android:id="@+id/item_homepage_three_tx1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="32%"
+                    android:textColor="@color/gray_toolbar"
+                    android:textSize="@dimen/sp_top" />
+
+                <com.gikee.app.views.MyTextView
+                    android:id="@+id/item_homepage_three_tx3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="32%"
+                    android:textColor="@color/gray_toolbar"
+                    android:textSize="@dimen/sp_top" />
+
+                <com.gikee.app.views.MyTextView
+                    android:id="@+id/item_homepage_three_tx5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="32%"
+                    android:textColor="@color/gray_toolbar"
+                    android:textSize="@dimen/sp_top" />
+
+                <com.gikee.app.views.MyTextView
+                    android:id="@+id/item_homepage_three_tx7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="32%"
+                    android:textColor="@color/gray_toolbar"
+                    android:textSize="@dimen/sp_top" />
+
+                <com.gikee.app.views.MyTextView
+                    android:id="@+id/item_homepage_three_tx9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="32%"
+                    android:textColor="@color/gray_toolbar"
+                    android:textSize="@dimen/sp_top" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <com.gikee.app.views.MyTextView
+                    android:id="@+id/item_homepage_three_tx2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="32%"
+                    android:textColor="@color/gray_toolbar"
+                    android:textSize="@dimen/sp_top" />
+
+                <com.gikee.app.views.MyTextView
+                    android:id="@+id/item_homepage_three_tx4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="32%"
+                    android:textColor="@color/gray_toolbar"
+                    android:textSize="@dimen/sp_top" />
+
+                <com.gikee.app.views.MyTextView
+                    android:id="@+id/item_homepage_three_tx6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="32%"
+                    android:textColor="@color/gray_toolbar"
+                    android:textSize="@dimen/sp_top" />
+
+                <com.gikee.app.views.MyTextView
+                    android:id="@+id/item_homepage_three_tx8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="32%"
+                    android:textColor="@color/gray_toolbar"
+                    android:textSize="@dimen/sp_top" />
+
+                <com.gikee.app.views.MyTextView
+                    android:id="@+id/item_homepage_three_tx10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="32%"
+                    android:textColor="@color/gray_toolbar"
+                    android:textSize="@dimen/sp_top" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

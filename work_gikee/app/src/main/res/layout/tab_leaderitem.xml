@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hot_search"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_btn_leader"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="@dimen/dp_12"
+    >
+
+
+    <ImageView
+        android:id="@+id/tab_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:src="@mipmap/hot" />
+
+
+    <TextView
+        android:id="@+id/tab_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="middle"
+        android:singleLine="true"
+        android:maxEms="30"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@+id/tab_img"
+        android:textSize="13sp" />
+
+</RelativeLayout>

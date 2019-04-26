@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/remind_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="@string/tokeninfo"
+        android:layout_below="@+id/tablayout"
+        android:background="@color/fbeaea"
+        android:gravity="center"
+        android:textColor="@color/E16767"
+        android:textSize="@dimen/sp_11"
+        />
+
+    <com.meetsl.scardview.SCardView
+        android:id="@+id/new_price_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/remind_title"
+        android:background="@drawable/shape_edit_nopadding"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/dp_10"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardShadowStartColor="#E4E4E4"
+        app:cardShadowEndColor="#F7F7F8"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:cardLightDirection="top">
+
+
+        <RelativeLayout
+            android:id="@+id/new_price"
+            android:layout_height="35dp"
+            android:layout_width="match_parent"
+
+            >
+
+            <ImageView
+                android:id="@+id/img_price"
+                android:layout_height="14dp"
+                android:layout_width="14dp"
+                android:background="@mipmap/horn"
+                android:layout_marginLeft="12dp"
+                android:layout_centerVertical="true"
+                />
+
+
+            <com.gikee.app.views.MyTextView
+                android:id="@+id/exchange"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:text="BitMEX"
+                android:layout_toRightOf="@+id/img_price"
+                android:layout_marginLeft="20dp"
+                android:textSize="@dimen/sp_13"
+                android:textColor="@color/gray_33"
+
+                />
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="11sp"
+                    android:text="@string/currentmarket"
+                    />
+                <com.gikee.app.views.MyTextView
+                    android:id="@+id/txt_price"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/sp_13"
+                    android:textColor="@color/gray_33"
+                    />
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/txt_percentage"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_10"
+                android:textSize="11sp"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+    </com.meetsl.scardview.SCardView>
+
+    <!--<TextView-->
+        <!--android:id="@+id/editrend"-->
+        <!--android:layout_below="@+id/new_price_layout"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="@dimen/dp_10"-->
+        <!--android:text="@string/edittrend"-->
+        <!--android:textColor="@color/color_9b9b9b"-->
+
+        <!--/>-->
+
+    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+        android:id="@+id/fm_all_shuju_refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/new_price_layout">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fm_all_shuju_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_bg"
+
+            />
+
+
+    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+</RelativeLayout>

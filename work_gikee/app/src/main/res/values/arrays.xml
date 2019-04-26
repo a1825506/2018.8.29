@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string-array name="specialtrade_title">
+        <item>特殊地址</item>
+        <item>大额转账</item>
+        <item>交易频繁</item>
+    </string-array>
+
+
+    <string-array name="addaccount_type">
+        <item>@string/add_eth_account</item>
+        <item>@string/add_btc_account</item>
+    </string-array>
+
+
+
+</resources>

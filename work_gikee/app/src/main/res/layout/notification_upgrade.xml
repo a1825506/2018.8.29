@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false"
+    android:paddingLeft="10dip">
+    
+    <ImageView android:id="@+id/upgrade_icon"
+        android:src="@mipmap/ic_launcher"
+        android:contentDescription="@string/app_name"
+        android:layout_width="48dip"
+        android:layout_height="48dip"
+        android:layout_margin="5dip"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitCenter"/>
+        
+    <TextView 
+        android:id="@+id/upgrade_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/downloading"
+        android:paddingLeft="5dip"
+        android:textSize="16sp"
+        android:layout_toRightOf="@id/upgrade_icon"
+        android:layout_alignTop="@id/upgrade_icon"/>
+        
+    <TextView android:id="@+id/app_upgrade_progresstext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#8F8F8F"
+        android:layout_marginLeft="5dip"
+        android:textSize="14sp"
+        android:layout_toRightOf="@id/upgrade_name"
+        android:layout_alignBottom="@id/upgrade_name"/>
+    
+    
+    <LinearLayout android:id="@+id/app_upgrade_progressblock"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/upgrade_icon"
+        android:layout_alignBottom="@id/upgrade_icon"
+        android:layout_margin="5dip"
+        android:orientation="horizontal">
+        <ProgressBar android:id="@+id/app_upgrade_progressbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleHorizontal"/>
+    </LinearLayout>
+    
+   <!--  <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <ImageView android:src="@drawable/ic_launcher"
+            android:contentDescription="@string/app_name"
+            android:layout_width="24dip"
+            android:layout_height="24dip"
+            android:scaleType="fitCenter"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:paddingLeft="5dip"
+            android:textSize="16dip"/>
+        <TextView android:id="@+id/app_upgrade_progresstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#8F8F8F"
+            android:layout_marginLeft="5dip"
+            android:textSize="14dip"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:padding="5dip"
+        android:layout_weight="1">
+        <LinearLayout android:id="@+id/app_upgrade_progressblock"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ProgressBar android:id="@+id/app_upgrade_progressbar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="?android:attr/progressBarStyleHorizontal"/>
+        </LinearLayout>
+    </LinearLayout> -->
+</RelativeLayout>

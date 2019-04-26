@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dp_5"
+    android:paddingBottom="@dimen/dp_5"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/from_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/from"
+        android:textSize="@dimen/sp_12"
+
+        />
+
+    <TextView
+        android:id="@+id/from_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxEms="4"
+        android:ellipsize="middle"
+        android:singleLine="true"
+        android:textColor="@color/Blue"
+        app:layout_constraintLeft_toRightOf="@+id/from_title"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:textSize="@dimen/sp_12"
+
+        />
+
+    <TextView
+        android:id="@+id/to_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/to"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintLeft_toRightOf="@+id/from_value"
+
+        />
+
+    <TextView
+        android:id="@+id/to_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxEms="4"
+        android:ellipsize="middle"
+        android:singleLine="true"
+        android:textColor="@color/Blue"
+        app:layout_constraintLeft_toRightOf="@+id/to_title"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:textSize="@dimen/sp_12"
+
+        />
+
+    <TextView
+        android:id="@+id/flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/transfer"
+        app:layout_constraintLeft_toRightOf="@+id/to_value"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:textSize="@dimen/sp_12"
+
+        />
+
+    <TextView
+        android:id="@+id/value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="@dimen/sp_12"
+        />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topaddr"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/rank_layout"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:padding="@dimen/dp_15"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:id="@+id/ranklayout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/rank"
+                android:layout_width="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:text="TOP1"
+                android:textSize="@dimen/sp_12"
+                />
+
+        </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textSize="@dimen/sp_12"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="0x7484030291h4i4o5h2…"
+        android:maxEms="6"
+        android:singleLine="true"
+        android:ellipsize="middle"
+        />
+    <TextView
+        android:id="@+id/addrss_flag"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_33"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/sp_12"
+        android:visibility="gone"
+        android:text="Binance"
+        />
+
+    <TextView
+        android:id="@+id/unit"
+        android:textSize="@dimen/sp_12"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+
+        />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rank_layout"
+        android:background="@color/line_biew"
+        android:paddingRight="@dimen/dp_12"
+        android:paddingLeft="@dimen/dp_12"
+        />
+
+
+
+</RelativeLayout>

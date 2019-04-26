@@ -1,0 +1,841 @@
+<resources>
+
+    <string name="app_name">Gikee</string>
+
+    <!--HOME-->
+
+    <string name="title_mine">Personal</string>
+
+    <string name="title_mineproject">Project</string>
+    <string name="title_home">Home</string>
+    <string name="title_address">Monitor Account</string>
+
+
+
+    <!--全部项目-->
+    <string name="ap_title">All Projects</string>
+    <string name="ap_zhnum">Total Address</string>
+    <string name="ap_newzh">New Address</string>
+    <string name="ap_activezh">Active Address</string>
+    <string name="ap_transationnum">Transaction Number</string>
+    <string name="ap_transation">Transaction Volume</string>
+
+    <string name="ap_allzhnum">Total Address</string>
+
+
+
+    <!--全部项目-今日新增账户-->
+    <string name="today_add_title">Address Added Today</string>
+    <string name="today_add_headtx">Deadline block：</string>
+    <string name="today_add_nodata">No data</string>
+    <string name="today_add_add">Add</string>
+    <string name="today_active_date">Date</string>
+    <string name="today_active_active">Active</string>
+    <string name="today_active_user"> Active Address</string>
+    <string name="today_active_title">Active Address Today</string>
+    <string name="today_tran_title">Total Transactions</string>
+    <string name="today_tran_time">Date</string>
+    <string name="today_tran_num">Total Transactions</string>
+    <string name="today_tran_des">Total Transactions</string>
+    <!--全部项目-持币账户-->
+    <string name="zh_header_title">Coin Holding Address</string>
+    <string name="zh_zh_des">Address</string>
+    <string name="zh_header_minute">5 Min</string>
+    <string name="zh_header_hour">Hour</string>
+    <string name="zh_header_day">Day</string>
+    <string name="zh_header_week">Week</string>
+    <string name="zh_header_month">Month</string>
+    <string name="zh_header_date">Date</string>
+    <string name="zh_header_ownnum">Coin Holding Address</string>
+    <string name="zh_title">Coin Holding Address</string>
+    <string name="zh_time_interval">Time Slot</string>
+    <string name="zh_start">From</string>
+    <string name="zh_end">To</string>
+    <string name="zh_week">7 Days</string>
+    <string name="zh_month">30 Days</string>
+    <string name="zh_twomonth">60 Days</string>
+    <string name="zh_halfyear">Half-year</string>
+    <string name="zh_year">one Year</string>
+    <!--全部项目-新增账户-->
+    <string name="zh_newadd_title">Add New Address</string>
+    <string name="zh_newadd_addnum">Add New Address</string>
+
+    <!--全部项目-交易数-->
+    <string name="zh_transactionnum_title">Total Transaction Distribution</string>
+    <string name="zh_transactionnum_addnum">Total Transaction Distribution</string>
+    <!--全部项目-交易量-->
+    <string name="zh_transaction_title">Transaction Volume</string>
+    <string name="zh_transaction_addnum">Transaction Volume</string>
+    <!--全部项目-活跃账户-->
+    <string name="zh_active_title">Active Address</string>
+    <string name="zh_active_addnum">Active Address</string>
+    <!--全部项目-TOP100账户持币-->
+    <string name="zh_top_title">Ranking</string>
+    <string name="zh_top_addr">Ranking</string>
+    <string name="zh_top_num">Address</string>
+    <string name="zh_top_bili">Coin Holding Amount</string>
+    <string name="zh_top_change">Coin Holding Percentage</string>
+    <!--全部项目-账户分布-->
+    <string name="zh_zhfb_title">Coin Holding Asset Distribution</string>
+    <string name="zh_zhfb_fanwei">Account Segments</string>
+    <string name="zh_zhfb_cbnum">Coin Holding Amount</string>
+    <string name="zh_zhfb_cbpie">Coin Holding Percentage</string>
+    <!--全部项目-交易笔数分布-->
+    <string name="zh_jybs_title">Total Transaction Distribution</string>
+    <string name="zh_jybs_guimo">Scale</string>
+    <string name="zh_jybs_num">Total Transaction Distribution</string>
+
+    <!--全部项目-交易量分布-->
+    <string name="zh_jyl_title">Transaction Volume Distribution</string>
+    <string name="bili">proportion</string>
+
+
+    <!--我的项目-->
+    <!--我的项目-首页-->
+    <string name="mp_title">My Project</string>
+    <string name="mp_footer">+Add, Arrange, Delete project ></string>
+    <string name="search_context">Search ERC20 project/ETH account address</string>
+    <string name="search_special_context">Please enter the exchange, celebrities, events</string>
+
+    <string name="browse">Recent hot search</string>
+
+    <!--我的项目-编辑-->
+    <string name="mp_edit_title">Project(Coin) Editing</string>
+    <string name="ma_edit_title">Address Editing</string>
+    <string name="ma_edit_pname">Address name</string>
+    <string name="mp_edit_pname">Project name</string>
+    <string name="mp_edit_coll">Save</string>
+    <string name="mp_edit_top">Top</string>
+    <string name="mp_edit_sort">Arrange</string>
+    <string name="mp_edit_add">Add</string>
+
+
+    <!--我的项目-添加-->
+    <string name="mp_add_title">Search</string>
+    <string name="mp_add_hot">Popular items</string>
+    <string name="mp_add_hestory">History record</string>
+    <string name="mp_add_cancle">Cancel</string>
+    <string name="mp_add_des1">This %1$s is so well hidden, we are still working on searching it.</string>
+
+
+
+    <!--个人中心-->
+    <string name="mine_login">Register / Login</string>
+    <string name="mine_password">Change Password</string>
+    <string name="mine_warning">Notification</string>
+    <string name="mine_quate">Red rose green decline</string>
+    <string name="price_unit">Price Unit</string>
+    <string name="mine_language">Language</string>
+    <string name="mine_telephone">Contact Us</string>
+    <string name="mine_share">Share With Friends</string>
+    <string name="mine_edition">Latest Version</string>
+
+    <!--个人中心-联系我们-->
+    <string name="mine_contact_wechat">WeChat</string>
+    <string name="mine_contact_weibo">WeiBo</string>
+    <string name="mine_contact_email">E-mail</string>
+    <string name="wechat_friends">WeChat Moment</string>
+
+
+
+    <string name="wechat_public">Public Accounts </string>
+    <string name="twitter">Twitter</string>
+    <string name="dianbao">Telegraph Group</string>
+    <string name="wechat_qq">QQ Group</string>
+
+
+
+    <string name="mine_contact_facebook">Facebook</string>
+    <!--登录-->
+    <string name="login_login">Login</string>
+    <string name="login_regist">Register</string>
+    <string name="login_email">Please Enter Your E-mail Address</string>
+
+    <string name="login_emailtitle">E-mail Login</string>
+    <string name="login_password">Please Enter Your Password</string>
+    <string name="confirm_password">Please Enter Your Password</string>
+    <string name="login_forget">Forgot Your Password?</string>
+    <!--注册-->
+    <string name="regist_sure">Complete</string>
+    <string name="regist_findback">Find Password</string>
+    <string name="regist_repeat_password">Please Confirm Your Password</string>
+    <string name="regist_des1">By Clicking “Complete” You Agree With</string>
+    <string name="regist_des2">《Gikee User Agreement》</string>
+
+    <!--dialog文字-->
+
+    <string name="dg_choseico_cancel">Cancel</string>
+
+    <string name="dg_chose_unit_china_des">Renminbi</string>
+    <string name="dg_chose_unit_china">Renminbi CNY</string>
+    <string name="dg_chose_unit_america_des">USD</string>
+    <string name="dg_chose_unit_america">Dollar USD</string>
+    <!--<string name="dg_chose_language_chana">Simplified Chinese</string>-->
+    <string name="dg_chose_language_english">English</string>
+
+    <string name="dg_uploadcomplete_sure">Confirm</string>
+
+
+    <string name="dg_exit_sure">Exit account</string>
+    <string name="recycler_nomore">The end of data, we are putting our best efforts on data-ming.</string>
+
+    <!--pop文字-->
+    <string name="pop_share">Share</string>
+
+
+    <!--Toast提示文字-->
+    <string name="toast_exitapp">Press again to exit the program</string>
+    <string name="toast_emptyhistory">History is empty</string>
+    <string name="toast_clearhistory_sure">Clean up successfully</string>
+    <string name="hot_project">Popular Project</string>
+    <string name="leaderboard">ERC20 Ranking</string>
+    <string name="top50">TOP50 Ranking</string>
+    <string name="trade">Transaction Volume</string>
+
+    <string name="value">MarketValue</string>
+    <string name="value_change">Market value change</string>
+    <string name="turnover">24HTurnover</string>
+    <string name="usrjoin">Market Value</string>
+    <string name="trade_live">Trading Activity</string>
+    <string name="leaderby">Order by the Total Amount of Txhash of Yesterday</string>
+    <string name="collect_project">No Favorite</string>
+    <string name="collect">Favorite</string>
+    <string name="collected">Collected</string>
+    <string name="trade_lastweek">Last week trading</string>
+    <string name="trade_time">Transaction time</string>
+    <string name="trade_num">Transaction amount</string>
+    <string name="address">Account</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="update_name">Change Notification</string>
+    <string name="save">Save</string>
+    <string name="edittrend">Manual Editing ></string>
+    <string name="trend_name">Trend name</string>
+    <string name="trade_monitoring">Special Transaction Surveillance(Within A Week)</string>
+    <string name="more">More ></string>
+    <string name="ranking">Ranking</string>
+    <string name="volume">Coin Holding Amount</string>
+    <string name="ratio">Coin Holding Percentage</string>
+    <string name="newaddress">Add New Account</string>
+    <string name="sleepadress">Dormant</string>
+    <string name="awakeaddress">Wake</string>
+    <string name="range">Range</string>
+    <string name="newversion">Currently the latest version</string>
+
+    <string name="Downloaded">Download</string>
+    <string name="edit_choose">Manual Editing</string>
+    <string name="update_now">Upgrade immediately</string>
+    <string name="update_after">Check Later</string>
+    <string name="cannel">Cancel</string>
+    <string name="TOP00">TOP 100 Account Asset Distribution</string>
+    <string name="onweraddress">Holders</string>
+    <string name="loadmore">Pull loading more. . .</string>
+    <string name="nomoredata">No more data</string>
+    <string name="remind">Reminder</string>
+    <string name="detail">Check the Details</string>
+    <string name="message">Caution</string>
+    <string name="more_addresscollect">Aggregation</string>
+    <string name="more_radiation">Divergent</string>
+    <string name="nocontext">No content yet</string>
+    <string name="share">Share</string>
+    <string name="yestaday">Yesterday</string>
+    <string name="lastweek">Last Week</string>
+    <string name="lastmonth">Last Month</string>
+    <string name="top100trade">Ranking of Account Transaction Frequency</string>
+    <string name="Handfeetotl">Total Consumption of Transaction Fee</string>
+    <string name="Handfee">Averaged Fee Per Transaction</string>
+    <string name="diffc">Difficulty</string>
+    <string name="power">Computing Power</string>
+    <string name="jiaoyishouxufei">Averaged Fee Per Transaction</string>
+    <string name="jiaoyisliang">Per Averaged Transaction </string>
+
+    <string name="size">Scale</string>
+    <string name="tradecount">Number of transactions</string>
+    <string name="tradenum">Transaction Volume</string>
+    <string name="HugeNum">Huge</string>
+    <string name="BigNum">Large</string>
+    <string name="liveaddressnum">Active Account</string>
+    <string name="alladdress">Total</string>
+    <string name="onweraddressnum">Holders</string>
+    <string name="hugeCount">Oversized single</string>
+    <string name="bigCount">Big single</string>
+    <string name="midiumCount">Medium order</string>
+    <string name="smallCOunt">Small order</string>
+    <string name="tinyCount">Small single</string>
+
+
+    <string name="top10">1-10</string>
+    <string name="top50r">11-50</string>
+    <string name="top100">51-100</string>
+    <string name="top1000">101-1000</string>
+
+    <string name="update_check">Update content</string>
+    <string name="checkout">Check for Updates</string>
+    <string name="circulation">Circulation</string>
+    <string name="circulationrate">Circulation rate</string>
+
+    <string name="address_rank">Account range</string>
+    <string name="other_a">others</string>
+    <string name="today">Today</string>
+
+    <string name="tokeninfo">Current data is from the blockchain...</string>
+    <string name="collect_success">Successful collection</string>
+    <string name="collect_cannel">Cancel collection</string>
+    <string name="ci">Times</string>
+    <string name="NO1address">NO.1地址</string>
+    <string name="login_registered">Registration/Login</string>
+
+
+    <string name="top100_distributed">TOP 100 Account Asset Distribution</string>
+    <string name="topDis">Coin Holding Asset Distribution</string>
+    <string name="specialTrade">Special Transaction Surveillance </string>
+    <string name="specialtrade">Specia</string>
+    <string name="bigTradeCountDis">Large Transfe</string>
+    <string name="frequentlyTrade">Frequent</string>
+    <string name="newAndInactivity">Add and Wake Account</string>
+    <string name="newCount">New Account</string>
+    <string name="wakeCount">Wake Account</string>
+    <string name="inactiveCount">Inactive Account</string>
+    <string name="activeDis">Active Account</string>
+    <string name="trade_hot">Degree of Transaction Popularity</string>
+    <string name="marketValue">Circulating Value</string>
+    <string name="diffPower">Difficulty and Computing Power of Mining</string>
+    <string name="avgTrdVol">Per Averaged Transaction</string>
+    <string name="topFreqAddr">Ranking of Account Transaction Frequency</string>
+    <string name="tradeVolDis">Transaction Volume Distribution</string>
+    <string name="tradeCountDis">Total Transaction Distribution</string>
+    <string name="allAddr">Numbers of Total Account and Coin Holding Account</string>
+    <string name="topPlayer">TopPlayer</string>
+    <string name="allGas">Total Consumption of Transaction Fee</string>
+    <string name="avgGas">Averaged Fee Per Transaction</string>
+
+
+
+    <string name="optional">Optional</string>
+    <string name="alltrends">Total</string>
+    <string name="addtrends">Account</string>
+    <string name="tradetrends">Transaction</string>
+    <string name="info">Profile</string>
+
+    <string name="token_type">Type of Token</string>
+    <string name="num">数</string>
+    <string name="num_unit">times</string>
+
+    <string name="check_net">Please check the network</string>
+
+    <string name="installing">Installing</string>
+    <string name="downloadfaild">Download failed</string>
+    <string name="downloading">Download in the background...</string>
+    <string name="nofindprogram">Did not find a program to open such a file</string>
+    <string name="findnewVersion">Other New Version</string>
+    <string name="ignoreversion">Ignore this version</string>
+    <string name="reset">Reset</string>
+    <string name="share_refuse">Sharing rejected</string>
+    <string name="share_cannel">Cancel sharing</string>
+    <string name="share_success">Sharing success</string>
+    <string name="share_exception">Sharing exception</string>
+
+    <string name="profile">Profile</string>
+
+    <string name="currentmarket">Current market price: </string>
+
+    <string name="choosedate">Select date</string>
+
+    <string name="check_address">Please check if the account is correct</string>
+
+
+    <string name="nodata">No data</string>
+
+    <string name="net_bad">network unstable, please pull down to refresh.</string>
+
+    <string name="no_adddata">No added optional</string>
+
+    <string name="nominutedata">No minute data</string>
+
+    <string name="nohourdata">No hourly data</string>
+
+    <string name="nodaydata">No day data</string>
+
+    <string name="noweekdata">No weekly data</string>
+
+    <string name="nomonthdata">No monthly data</string>
+    <string name="guide_title1">Data on the Chain，Search and View Now</string>
+    <string name="guide_title2">One-click Collection，Quick View of Data</string>
+    <string name="guide_title3">Multiple Dimensions List，Dynamic Ranking</string>
+    <string name="guide_title4">Asset Change，Real-time Monitoring</string>
+    <string name="guide_title5">Understand the Blockchain with Data</string>
+
+
+    <string name="tenthousand">million</string>
+    <string name="billion">billion</string>
+    <string name="addproject">+ Add Projects</string>
+    <string name="addaddress">+ Add Account</string>
+    <string name="address_datail">Account Details</string>
+    <string name="start_gikee">Open Gikee</string>
+    <string name="start_use">Activated</string>
+    <string name="press_exit">Press again to exit the program</string>
+    <string name="exception">Sorry, the program is abnormal and will quit.</string>
+    <string name="newtop100">Add account TOP10%</string>
+    <string name="search_notnull">Query field cannot be empty</string>
+
+
+    <string name="time_day">Day</string>
+    <string name="time_week">Week</string>
+    <string name="time_month">Month</string>
+    <string name="filenotexist">File does not exist</string>
+
+
+    <string name="top100_title">Top Asset Distribution</string>
+    <string name="topDis_title">Asset Distribution</string>
+    <string name="allAddr_title">Total Account</string>
+    <string name="ownAddr_title">Holders Account</string>
+    <string name="specialTrade_title">Special Transaction Monitoring</string>
+    <string name="activeDis_title">Active Account</string>
+    <string name="topFreqAdd_title">Account Transaction Frequency Ranking</string>
+    <string name="trade_vol_en">Trade Volumme</string>
+    <string name="tradenum_en">Trade Number</string>
+    <string name="tradeCountDis_title">Number of transactions</string>
+    <string name="avgTrdVol_title">AvgTradeVolume</string>
+    <string name="tradeVolDis_title">Trading Volume Distribution</string>
+    <string name="bigTradeCountDis_title">Considerably Large</string>
+    <string name="price_title">Price</string>
+    <string name="participateAddress">participateAddress</string>
+    <string name="tradeValue">transaction amount</string>
+    <string name="avgTrdValue">AvgTradeValue</string>
+    <string name="newAndInactivity_title">Add and Wake up Account</string>
+    <string name="diffPower_title">Mining Difficulty, Computing Power</string>
+    <string name="tradevolume_title">Trading Volume</string>
+    <string name="tradeCount_title">Number of Transactions</string>
+    <string name="allGas_title">Total cost of Handling</string>
+    <string name="avgGas_title">Average Fee Per tTransaction</string>
+    <string name="marketValue_title">Circulation Market Value</string>
+
+    <string name="moredata">In the end.</string>
+
+    <string name="wait_login">Registered login has not been opened yet</string>
+
+    <string name="wake_title">Wake</string>
+
+    <string name="trade_list">Trade List</string>
+
+    <string name="leader">Ranking</string>
+
+    <string name="hot1"> FT Cold Wallet</string>
+
+    <string name="hot2">Fake sonm account</string>
+
+    <string name="hot3">Large trader crushing the market with 200K ETH</string>
+
+    <string name="hot4"> Parity wallet hacker</string>
+
+    <string name="checking">Checking</string>
+
+    <string name="noyestday_trade"> No transactions yesterday</string>
+
+
+    <string name="getdata">Getting data</string>
+
+    <string name="remind_datail">Detail</string>
+
+    <string name="eth_datail">Detail >></string>
+
+    <string name="share_description">Blockchain digital asset monitoring, browsing and visualization tools</string>
+
+    <string name="baseline">Basic chain</string>
+
+    <string name="history_search">search history</string>
+
+    <string name="share_title">The data on the chain comes from \n www.gikee.com</string>
+
+    <string name="en_title">English Name</string>
+
+    <string name="publish_time">Publish Time</string>
+
+
+    <string name="ch_title">Chinese Name</string>
+
+    <string name="public_info">Public information</string>
+
+    <string name="link_info">Related Links</string>
+
+    <string name="trade_hash">Trade Hash:</string>
+
+    <string name="from">from</string>
+
+    <string name="from_hash">Block Hash</string>
+
+    <string name="to">to</string>
+
+    <string name="in">in</string>
+
+    <string name="out">out</string>
+
+    <string name="amount">amount</string>
+
+    <string name="trade_detail">Trade detail</string>
+
+    <string name="trade_relationship">Trading relationship</string>
+
+    <string name="trade_record">Transaction Record</string>
+
+    <string name="token_balance">Token Balance</string>
+
+    <string name="block_height">Block Height</string>
+
+    <string name="status">Status</string>
+
+    <string name="gas_detail">Gas Detail</string>
+
+    <string name="gas_limit">Gas limit</string>
+
+    <string name="gas_used">Gas Used</string>
+
+    <string name="gas_price">Gas Price</string>
+
+    <string name="gas_pay">Miner cost</string>
+
+    <string name="token_detail">Token Detail</string>
+
+    <string name="contract_inside">Contract internal transfer details</string>
+
+    <string name="eos_staked">EOS Staked</string>
+
+    <string name="eos_unstaked">EOS UnStaked</string>
+
+    <string name="eos_refund_time">Last redemption effective time</string>
+
+    <string name="create_time">Create Time</string>
+
+    <string name="create_account">Create Account</string>
+
+    <string name="internet_resources">Internet Resources</string>
+
+    <string name="ram">RAM</string>
+
+    <string name="net">Net</string>
+
+    <string name="rate">Usage Rate：</string>
+
+    <string name="token_transfer">Token Transfer</string>
+
+    <string name="input">Input</string>
+
+    <string name="output">OutPut</string>
+
+    <string name="total_account">%1$sAccount</string>
+
+    <string name="assets">Balance of assets</string>
+
+    <string name="trade_success">Success</string>
+
+    <string name="block_time">Block Time</string>
+
+    <string name="confirm_num">Confirm Num</string>
+
+    <string name="block_size">Block Size</string>
+
+    <string name="virtual_size">Virtual Size</string>
+
+    <string name="gas_rate">Miner rate (BTC / kVB):</string>
+
+    <string name="expire_date">Expire_Date:</string>
+
+    <string name="block_hash">Block Hash:</string>
+
+    <string name="token_trade">Token Trade</string>
+
+    <string name="remake">Remakes</string>
+
+    <string name="token">Token</string>
+
+    <string name="pop_recommendation">Popular recommendation</string>
+
+    <string name="copied">Duplicated to pasteboard</string>
+
+    <string name="account_balance">Account Balance</string>
+
+    <string name="support_item">* Currently supports searching for project/account/transaction ID on BTC,ETH,EOS</string>
+
+    <string name="btcaddress"> Satoshi Nakamoto’s account</string>
+
+    <string name="binance_address"> Binance ETH account</string>
+
+    <string name="btc_big"> BTC large Transaction</string>
+
+    <string name="eos_big">block.one EOS Account</string>
+
+    <string name="Fomo3D"> Fomo3D award Transaction</string>
+
+    <string name="recently_launched">Recently launched</string>
+
+    <string name="more_item">More Projects</string>
+
+    <string name="rich_list">Rich List</string>
+
+    <string name="rank_amount">amount</string>
+
+    <string name="clean_history">Clear history</string>
+
+    <string name="close">close</string>
+
+    <string name="success_status">success</string>
+
+    <string name="failure_status">failur</string>
+
+    <string name="load_fail">network unstable,Pull down to refresh</string>
+
+    <string name="rank_com">NO .%1$s</string>
+
+    <string name="marketvalue_ratio">marketvalueRatio</string>
+
+    <string name="circulation_">circulation</string>
+
+    <string name="avg_price">avg_price</string>
+
+    <string name="start_time">start time</string>
+
+    <string name="end_time">end time</string>
+
+    <string name="ico_allocation">ICO allocation</string>
+
+    <string name="investor_share">Investor Share</string>
+
+    <string name="token_platform">Token Platform</string>
+
+    <string name="count">Successful crowdfunding</string>
+
+    <string name="success_money">Successful crowdfunding amount</string>
+
+    <string name="start_price">start price</string>
+
+    <string name="related_info">related Info</string>
+
+    <string name="browser">browser</string>
+
+    <string name="website">website</string>
+
+    <string name="whitePaper">whitePaper</string>
+
+    <string name="added">Added</string>
+
+    <string name="market_value">Circulation value</string>
+
+    <string name="hand_turn">24HHand turnover rate</string>
+
+    <string name="eos_account">EOS account</string>
+
+    <string name="my_address">My Address</string>
+
+    <string name="follow_system">Follow system</string>
+
+    <string name="dg_chose_language_chana">简体中文</string>
+
+    <string name="quoteChange">daily change rate</string>
+
+    <string name="reload">Reload</string>
+
+    <string name="global_market">Global market capitalization</string>
+
+    <string name="market_title">Market(USD)</string>
+
+    <string name="compared_previous_day">Compared to the previous day</string>
+
+    <string name="last_month">Nearly 30 days</string>
+
+    <string name="power_title"> BTC, BCH, LTC Hash Rate</string>
+
+    <string name="all">All ></string>
+
+    <string name="today_data">Today data</string>
+
+    <string name="compared_previous_day1">(greater than the previous day)</string>
+
+    <string name="price_us">Price（USD）</string>
+    <string name="price_cny">Price（USD）</string>
+
+    <string name="last_30">Nearly 30 days</string>
+    <string name="last_90">Nearly 90 days</string>
+    <string name="last_180">Near half a year</string>
+    <string name="last_year">Nearly 30 days</string>
+    <string name="last_threeyear">Nearly a year</string>
+    <string name="last_all">All</string>
+
+    <string name="chain_indicator">Chain indicator</string>
+
+    <string name="pow_rate"> Hash rate（EH/s）</string>
+    <string name="pow_rate_eth">Power (KH/s）</string>
+    <string name="pow_eth">ETH Hash rate</string>
+    <string name="pow_btc">BTC Hash rate</string>
+    <string name="pow_bch">BCH Hash rate</string>
+    <string name="pow_ltc">LTC Hash rate</string>
+    <string name="market_value_trend">Market value trend</string>
+
+    <string name="market_share">Market share</string>
+
+    <string name="hash_rate">Hash Rate</string>
+
+    <string name="index_comparison">Index Comparison</string>
+
+    <string name="index_choose">Index Choose</string>
+
+    <string name="event_information">Event Information</string>
+
+    <string name="project_pk">Project PK</string>
+
+    <string name="my_collection">My Collection</string>
+
+    <string name="add_pk">Project has been added to compare</string>
+
+    <string name="cannel_pk">Project has been canceled</string>
+
+
+    <string name="max_pk">Up to five project comparisons</string>
+
+    <string name="indicator_data">Indicator data</string>
+
+    <string name="index_num">up to two indicators</string>
+
+    <string name="search_project">Search Project</string>
+
+    <string name="day_hight">24h highest</string>
+
+    <string name="day_low">24h minimum</string>
+
+    <string name="quote_change">quote</string>
+
+    <string name="balance">Balance</string>
+
+    <string name="adds_from">address out:</string>
+
+    <string name="adds_to">address in:</string>
+
+    <string name="quotes">Quotes</string>
+
+    <string name="exchange">Exchange</string>
+
+    <string name="pair">Transaction pair</string>
+
+    <string name="platform_profile">Platform profile</string>
+
+    <string name="country">Country</string>
+
+    <string name="turnover_">Turnover</string>
+
+    <string name="value_rank">MarketValue#%1$s</string>
+
+    <string name="industry_Trends">Trends</string>
+
+    <string name="as_token_balance">Token balance</string>
+
+    <string name="ethtraderecord">Trade</string>
+
+    <string name="erc20traderecord">ERC20 trade</string>
+
+    <string name="noerc20traderecord">NO ERC20 Token trade</string>
+
+    <string name="inside_the_contract">Inside contract</string>
+
+    <string name="noinside_the_contract">NO Inside contract</string>
+
+    <string name="padding">Padding</string>
+
+    <string name="contract">Contract</string>
+
+    <string name="transfer">Transfer</string>
+
+    <string name="nextpage">Next page</string>
+
+    <string name="token_remove">Token transferred</string>
+
+    <string name="send">Send Address</string>
+
+    <string name="receive">Receive Address</string>
+
+    <string name="token_count">Number of tokens</string>
+
+    <string name="global">Global</string>
+
+    <string name="public_chain">Public Chain</string>
+
+    <string name="real_time_data">Real-time Data</string>
+
+    <string name="block_info">Block#%1$s</string>
+
+    <string name="clsoe">Close</string>
+
+    <string name="account_monitoring">Account monitoring</string>
+
+    <string name="all_choose">Choose all</string>
+
+    <string name="combined_monitoring">Combined monitoring</string>
+
+    <string name="exchange_account">Exchange account</string>
+
+    <string name="set_nickname">Set nickname</string>
+
+    <string name="edit_nickname">Edit nickname</string>
+
+    <string name="input_nick">Enter nick</string>
+
+    <string name="input_account"> Enter a valid account</string>
+
+    <string name="add_eth_account">Add ETH account</string>
+
+    <string name="add_btc_account">Add BTC account</string>
+
+    <string name="add_eos_account">Add EOS account</string>
+
+    <string name="confirm_add">Confirm add</string>
+
+    <string name="check_address_">Please check address</string>
+
+    <string name="account_count">%1$s Account address</string>
+
+    <string name="confirm_edit">Confirm edit</string>
+
+    <string name="add_acount"> You do not have an address to monitor yet. Go and add it </string>
+
+    <string name="add_account_tips"> You can add your own account address, or you can add special accounts provided by us, including: exchange account, celebrity account, event account, etc. In addition, you can upload your account or special account to us, and will join after the approval. Share it to all users in our special account.</string>
+
+    <string name="statistics">statistics</string>
+
+    <string name="asset_transfer">Asset transfer in</string>
+
+    <string name="asset_transfer_out">Asset transfer out</string>
+
+    <string name="asset_in_count">（Total %1$s）</string>
+
+    <string name="monitor_address">%1$s Monitor account</string>
+
+    <string name="no_context_time">There are no transactions during the time period you have chosen, you can try other time periods!</string>
+
+    <string name="account_type">Add BTC、ETH Account</string>
+
+    <string name="upload_account_title">Share your address with everyone</string>
+
+    <string name="upload_account">Upload account</string>
+
+    <string name="monitor">+ Monitor</string>
+
+    <string name="monitored">Monitored</string>
+
+    <string name="develop">In development, stay tuned</string>
+
+
+    <string name="trade_vol_total">Total trade vol</string>
+
+    <string name="trade_total">Total trade count</string>
+
+    <string name="currect_balance">Currect balance</string>
+
+    <string name="search_tips">You can view these</string>
+
+    <string name="add_choose">Add optional</string>
+
+    <string name="total_count">Total number of transactions: the sum of the number of assets transferred to and from this account</string>
+
+    <string name="total_vol">Total trading volume: the sum of the assets transferred by the account for the transfer of assets</string>
+
+    <string name="all_acount">All account</string>
+
+</resources>

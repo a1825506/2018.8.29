@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:padding="@dimen/dp_12"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        >
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/as_token_balance"
+            android:textSize="@dimen/sp_14"
+            android:layout_centerVertical="true"
+
+            />
+
+        <TextView
+            android:id="@+id/title_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/title"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:textSize="11sp"
+            android:textColor="@color/title_color"
+            android:layout_centerVertical="true"
+            />
+
+
+
+        <TextView
+            android:id="@+id/title_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/close"
+            android:textSize="@dimen/sp_14"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+
+            />
+    </RelativeLayout>
+
+
+
+    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+        android:id="@+id/address_recycle_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/assetlist_recycle"
+        android:layout_below="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_5"
+        android:scrollbars="vertical"
+        />
+
+    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+</RelativeLayout>

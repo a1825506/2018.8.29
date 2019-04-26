@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_20"
+    android:layout_marginRight="@dimen/dp_20"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/dp_40"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/head_img"
+        android:layout_width="15dp"
+        android:layout_height="21dp"
+        android:background="@mipmap/label"
+        android:layout_marginLeft="@dimen/dp_20"
+        />
+
+    <TextView
+        android:id="@+id/nick_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_below="@+id/head_img"
+        android:textStyle="bold"
+        android:text="@string/set_nickname"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/input_nick_edit"
+        android:layout_below="@+id/nick_title_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_margin="@dimen/dp_20"
+        android:paddingLeft="@dimen/dp_10"
+        android:hint="@string/input_nick"
+        android:textSize="@dimen/sp_14"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:background="@drawable/edit_background"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_nick_edit"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:spinnerMode="dropdown"
+        android:id="@+id/spinner2"
+        android:background="@color/white"
+        />
+
+    <ImageView
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_below="@+id/input_nick_edit"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@mipmap/down"
+        android:layout_toRightOf="@+id/spinner2"
+        />
+
+    <EditText
+        android:id="@+id/input_account_edit"
+        android:layout_below="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_margin="@dimen/dp_20"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:hint="@string/input_account"
+        android:textSize="@dimen/sp_14"
+        android:focusable="true"
+        android:maxEms="6"
+        android:ellipsize="middle"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:background="@drawable/edit_background"/>
+
+
+    <Button
+        android:id="@+id/confirm_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_account_edit"
+        android:background="@drawable/shape_btn_newaccount"
+        android:text="@string/confirm_add"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_15"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_10"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>

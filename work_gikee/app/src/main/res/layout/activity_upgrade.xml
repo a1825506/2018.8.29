@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_edit_nopadding"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/upgrade_title"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:background="@mipmap/upgrade" />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10" >
+
+
+            <TextView
+                android:id="@+id/upgrade_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_12"
+                android:textStyle="bold"
+                android:text="@string/findnewVersion"
+                android:textColor="#4a4a4a"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/upgrade_version"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/upgrade_content"
+                android:text="1.0.04.10001"
+                android:background="@drawable/shape_btn_browse_selected"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/versioninfo"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="@dimen/dp_10"
+                android:textColor="@color/gray_33"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/alerdy_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/color_9090"
+        android:textSize="12sp"
+        android:visibility="gone"
+        />
+
+
+
+    <LinearLayout
+        android:id="@+id/upgrad_ignore_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <CheckBox
+            android:id="@+id/upgrade_ignore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ignoreversion"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/line_biew" />
+
+    <LinearLayout
+        android:id="@+id/upgrade_action_view"
+        android:layout_width="300dp"
+        android:layout_height="40dp" >
+
+        <TextView
+            android:id="@+id/upgrade_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/update_after"
+            android:textColor="@color/mineproject"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/view_letf"
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="@color/line_biew" />
+
+        <TextView
+            android:id="@+id/upgrade_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="12dip"
+            android:paddingTop="12dip"
+            android:text="@string/update_now"
+            android:textColor="@color/color_9090"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/upgrade_progress_view"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/upgrade_progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/little_blue"
+            android:textSize="12sp" />
+
+        <ProgressBar
+            android:id="@+id/upgrade_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dip"
+            android:layout_marginTop="3dip" />
+    </LinearLayout>
+
+</LinearLayout>

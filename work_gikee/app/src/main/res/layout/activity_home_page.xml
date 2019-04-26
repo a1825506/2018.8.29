@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <FrameLayout
+        android:id="@+id/main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/dp_toolbar"
+        android:background="@color/gray_bg"
+        >
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/tip_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/alpha_bg"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/bg"
+            />
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@mipmap/delete"
+            android:layout_marginTop="@dimen/dp_12"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_toolbar"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/main_vip_layout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/main_leader_layout"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                android:id="@+id/main_vip_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/home_gray"
+                />
+
+            <TextView
+                android:id="@+id/main_vip_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="2.5dp"
+                android:text="@string/title_home"
+                android:textColor="@color/home_navite"
+                android:textSize="@dimen/sp_10" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/main_leader_layout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/main_message_layout"
+            app:layout_constraintStart_toEndOf="@+id/main_vip_layout"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+
+            <ImageView
+                android:id="@+id/main_leader_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/ranking_gray"
+                />
+
+
+            <TextView
+                android:id="@+id/main_leader_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="2.5dp"
+                android:text="@string/industry_Trends"
+                android:textColor="@color/home_navite"
+                android:textSize="@dimen/sp_10" />
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/main_message_layout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/main_leader_layout"
+            app:layout_constraintStart_toEndOf="@+id/main_tab_layout"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+
+            <ImageView
+                android:id="@+id/main_message_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/monitor_gray"
+                />
+
+
+            <TextView
+                android:id="@+id/main_message_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="2.5dp"
+                android:text="@string/account_monitoring"
+                android:textColor="@color/home_navite"
+                android:textSize="@dimen/sp_10" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/main_tab_layout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/main_mine_layout"
+            app:layout_constraintStart_toEndOf="@+id/main_message_layout"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/main_tab_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/remind"
+                    />
+
+                <TextView
+                    android:id="@+id/main_tab_tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2.5dp"
+                    android:layout_below="@+id/main_tab_img"
+                    android:text="@string/message"
+                    android:textColor="@color/home_navite"
+                    android:textSize="@dimen/sp_10" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/remind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/new_remind"
+                android:layout_gravity="right"
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_5"
+                />
+
+
+            <!--<com.gikee.app.views.IconView-->
+                <!--android:id="@+id/main_tab_img"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:textSize="20sp"-->
+                <!--android:textColor="@color/F5C"-->
+                <!--android:text="&#xe607;"/>-->
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/main_mine_layout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/main_tab_layout"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <!--<com.gikee.app.views.IconView-->
+                <!--android:id="@+id/main_mine_img"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:textSize="20sp"-->
+                <!--android:textColor="@color/F5C"-->
+                <!--android:text="&#xe60a;"/>-->
+
+            <ImageView
+                android:id="@+id/main_mine_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/me_gray"
+                />
+
+            <TextView
+                android:id="@+id/main_mine_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="2.5dp"
+                android:text="@string/title_mine"
+                android:textColor="@color/home_navite"
+                android:textSize="@dimen/sp_10" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

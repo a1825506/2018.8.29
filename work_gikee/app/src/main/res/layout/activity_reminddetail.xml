@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+    <com.gikee.app.views.MyTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_12"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_20"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <com.gikee.app.views.MyTextView
+        android:id="@+id/title_en"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_12"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_20"
+        android:visibility="gone"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_12"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:textSize="11sp"
+            android:textColor="@color/AEAEAE"
+            />
+
+        <TextView
+            android:id="@+id/remind_form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/shape_btn_redlight"
+            android:visibility="gone"
+            android:text="VEN"
+            android:textColor="@color/title_color"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginRight="@dimen/dp_12"
+        android:layout_marginLeft="@dimen/dp_12"
+        android:scrollbars="none"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+    <com.gikee.app.views.MyTextView
+        android:id="@+id/context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="5dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/sp_13"
+        />
+
+        <com.gikee.app.views.MyTextView
+            android:id="@+id/context_en"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/dp_20"
+            android:lineSpacingExtra="5dp"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_13"
+            />
+
+            <RelativeLayout
+                android:id="@+id/jump_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_12"
+                android:visibility="gone"
+                >
+                <LinearLayout
+                    android:id="@+id/adds_from_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/adds_from"
+                        />
+                    <TextView
+                        android:id="@+id/adds_from"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Blue"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/adds_to_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/adds_from_layout"
+                    android:layout_marginTop="@dimen/dp_12"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/adds_to"
+                        />
+                    <TextView
+                        android:id="@+id/adds_to"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Blue"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/trade_hash_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/adds_to_layout"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:layout_marginBottom="@dimen/dp_20"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/trade_hash"
+                        />
+                    <TextView
+                        android:id="@+id/trade_hash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Blue"
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

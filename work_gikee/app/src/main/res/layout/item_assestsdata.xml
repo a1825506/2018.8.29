@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_marginLeft="@dimen/dp_20"
+    android:layout_marginRight="@dimen/dp_20"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/assets_in_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/assest_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/asset_transfer"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            >
+            <com.gikee.app.views.MyBoldTextView
+                android:id="@+id/assets_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="637,272"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/symbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:textSize="@dimen/dp_12"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/assets_in_usd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="849,202"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/assets_in_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/asset_in_count"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

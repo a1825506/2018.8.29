@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/dp_20"
+    android:paddingLeft="@dimen/dp_12"
+    android:paddingRight="@dimen/dp_12"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/project_info"
+         android:paddingBottom="@dimen/dp_12"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="@color/gray_33"
+        android:lineSpacingExtra="3dp"
+        android:textSize="@dimen/sp_12"
+        android:visibility="gone"
+        android:text=""
+        />
+
+    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+        android:id="@+id/fm_all_shuju_refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/public_recycle"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/project_info"
+        android:layout_marginBottom="30dp"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+
+
+
+</RelativeLayout>

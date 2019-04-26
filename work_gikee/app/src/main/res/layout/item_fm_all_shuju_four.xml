@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dp_10"
+    android:paddingLeft="@dimen/dp_10"
+    android:paddingRight="@dimen/dp_10">
+
+    <RelativeLayout
+        android:id="@+id/item_fm_all_shuju_four_content"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:background="@mipmap/all_shuju_bg"
+        android:padding="@dimen/dp_10">
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/item_fm_all_shuju_four_piechart"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="50dp">
+
+        </com.github.mikephil.charting.charts.PieChart>
+
+        <TextView
+            android:id="@+id/item_fm_all_shuju_four_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/item_fm_all_shuju_four_piechart"
+            android:drawableLeft="@mipmap/all_shuju_chibi"
+            android:drawablePadding="@dimen/dp_5"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text=""
+            android:textColor="@color/gray_86"
+            android:textSize="@dimen/sp_11" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/item_fm_all_shuju_four_title"
+            android:layout_toRightOf="@+id/item_fm_all_shuju_four_piechart"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="right"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingTop="10dp">
+
+                <com.gikee.app.views.MyTextView
+                    android:id="@+id/item_fm_all_shuju_four_data1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/gray_42"
+                    android:textSize="@dimen/sp_12" />
+
+                <com.gikee.app.views.MyTextView
+                    android:id="@+id/item_fm_all_shuju_four_data3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/gray_42"
+                    android:textSize="@dimen/sp_12" />
+
+                <com.gikee.app.views.MyTextView
+                    android:id="@+id/item_fm_all_shuju_four_data5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/gray_42"
+                    android:textSize="@dimen/sp_12" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <com.gikee.app.views.MyTextView
+                    android:id="@+id/item_fm_all_shuju_four_data2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/shuju_dian_one"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/gray_42"
+                    android:textSize="@dimen/sp_12" />
+
+                <com.gikee.app.views.MyTextView
+                    android:id="@+id/item_fm_all_shuju_four_data4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/shuju_dian_two"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/gray_42"
+                    android:textSize="@dimen/sp_12" />
+
+                <com.gikee.app.views.MyTextView
+                    android:id="@+id/item_fm_all_shuju_four_data6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/shuju_dian_three"
+                    android:drawablePadding="@dimen/dp_5"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/gray_42"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg">
+
+    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+        android:id="@+id/address_recycle_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:id="@+id/trade_address_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@color/appcolors"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <include layout="@layout/view_browser" />
+                </LinearLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/base_recycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/trade_address_layout"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/white"></android.support.v7.widget.RecyclerView>
+
+                <RelativeLayout
+                    android:id="@+id/token_transfer_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/base_recycle"
+                    android:paddingBottom="@dimen/dp_12"
+                    android:paddingLeft="@dimen/dp_12"
+                    android:paddingTop="@dimen/dp_12"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/token_img"
+                        android:layout_width="2dp"
+                        android:layout_height="12dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:layout_toRightOf="@+id/token_img"
+                        android:text="@string/token_transfer"
+                        android:textColor="@color/black" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/in_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/token_transfer_layout"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/dp_12"
+                    android:paddingLeft="@dimen/dp_12"
+                    android:paddingTop="@dimen/dp_12"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:text="@string/input"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/total_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:layout_toRightOf="@+id/input"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/account_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:layout_marginRight="12dp"
+                        android:textColor="@color/black" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/account_amount"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@color/line_biew" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/in_recycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/in_layout"
+                    android:background="@color/white"></android.support.v7.widget.RecyclerView>
+
+
+                <RelativeLayout
+                    android:id="@+id/out_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/in_recycle"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/dp_12"
+                    android:paddingLeft="@dimen/dp_12"
+                    android:paddingTop="@dimen/dp_12"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/output"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:text="@string/output"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/total_out_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:layout_toRightOf="@+id/output"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/account_out_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="@dimen/dp_12"
+                        android:layout_marginRight="12dp"
+                        android:text="4.100000 BTC"
+                        android:textColor="@color/black" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/account_out_amount"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@color/line_biew" />
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/output_recycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/out_layout"
+                    android:background="@color/white">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </RelativeLayout>
+
+
+
+    </ScrollView>
+
+    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+</RelativeLayout>

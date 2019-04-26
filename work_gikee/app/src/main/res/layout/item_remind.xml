@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/remind_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dp_10"
+    android:paddingLeft="@dimen/dp_10"
+    android:paddingRight="@dimen/dp_10"
+    >
+
+    <!--<com.meetsl.scardview.SCardView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--app:cardBackgroundColor="@android:color/white"-->
+        <!--app:cardCornerRadius="5dp"-->
+        <!--app:cardElevation="6dp"-->
+        <!--app:cardLightDirection="top">-->
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_marginTop="@dimen/dp_5"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="4dp"
+            >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            >
+
+
+    <ImageView
+        android:id="@+id/hot_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/hot_remind"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+
+        />
+
+    <com.gikee.app.views.MyTextView
+        android:id="@+id/remind_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_14"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textColor="@color/black"
+        />
+
+            <com.gikee.app.views.MyTextView
+                android:id="@+id/remind_en_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_11"
+                android:textStyle="bold"
+                android:layout_below="@id/remind_title"
+                android:layout_marginTop="@dimen/dp_5"
+                />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/remind_en_title"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="10dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/remind_time_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/time"
+            android:layout_centerVertical="true"
+
+            />
+
+        <TextView
+            android:id="@+id/remind_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_toRightOf="@+id/remind_time_img"
+           android:layout_centerVertical="true"
+            android:textSize="11sp"
+            android:textColor="@color/AEAEAE"
+            />
+
+        <TextView
+            android:id="@+id/remind_form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/remind_time"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/shape_btn_redlight"
+            android:text="VEN"
+            android:visibility="gone"
+            android:textColor="@color/title_color"
+            android:textSize="9sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_12"
+            android:text="@string/detail"
+            android:textSize="11sp"
+            android:textColor="@color/AEAEAE"
+            />
+    </RelativeLayout>
+
+
+
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+</RelativeLayout>

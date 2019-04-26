@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/all_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    >
+
+
+    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+        android:id="@+id/fm_all_shuju_refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        >
+
+        <com.gikee.app.views.MyBoldTextView
+            android:id="@+id/text_baseLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alltrends"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/black"
+            android:padding="@dimen/dp_12"
+
+            />
+
+        <TextView
+            android:id="@+id/text_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/index_num"
+            android:textSize="@dimen/sp_10"
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/text_baseLine"
+            android:paddingTop="14dp"
+            android:paddingBottom="@dimen/dp_12"
+
+            />
+    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:background="@drawable/btn_white_appcolor_5"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/dp_12"
+        >
+
+        <TextView
+            android:id="@+id/text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/last_month"
+            android:textSize="@dimen/sp_10"
+
+            />
+        <ImageView
+            android:id="@+id/img_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:background="@mipmap/down"
+            />
+
+    </LinearLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/layout_time"
+        >
+
+        <TextView
+            android:id="@+id/txt_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price_us"
+            android:textSize="@dimen/sp_10"
+            />
+
+
+        <ImageView
+            android:id="@+id/img_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/blackline"
+            android:visibility="gone"
+            app:layout_constraintLeft_toRightOf="@+id/txt_price"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_price"
+            app:layout_constraintTop_toTopOf="@+id/txt_price"
+            />
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zh_zh_des"
+            android:textSize="@dimen/sp_10"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_choosedate"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:background="@color/white"
+        android:layout_below="@+id/title_layout"
+        android:padding="@dimen/dp_12"
+        app:layout_constraintTop_toBottomOf="@+id/title_layout"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_12"/>
+
+
+    </LinearLayout>
+
+    <!--<include-->
+        <!--android:id="@+id/timechoose_layout"-->
+        <!--layout="@layout/choosedate"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/title_layout"-->
+        <!--android:visibility="gone"-->
+        <!--/>-->
+
+
+    <com.gikee.app.views.MyLineChart
+        android:id="@+id/linechart"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_below="@+id/layout_choosedate"
+        app:layout_constraintTop_toBottomOf="@+id/layout_choosedate"
+        android:layout_height="wrap_content">
+    </com.gikee.app.views.MyLineChart>
+
+    <LinearLayout
+        android:id="@+id/markerview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_markerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_12"
+            >
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+
+
+<!-- android:background="@drawable/selector_list_item"-->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabslayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/linechart"
+        app:tabMode="scrollable"
+        app:tabIndicatorHeight="0dp"
+        app:tabIndicatorColor="@color/title_color"
+        app:layout_constraintTop_toBottomOf="@+id/linechart"
+        app:tabSelectedTextColor="@color/title_color"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabTextColor="@color/gray_33" />
+
+
+    <com.gikee.app.views.AutoHeightViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabslayout"
+        app:layout_constraintTop_toBottomOf="@+id/tabslayout"
+
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_10"
+    android:paddingRight="@dimen/dp_10"
+    android:paddingTop="@dimen/dp_10">
+
+
+
+    <com.meetsl.scardview.SCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardShadowStartColor="#E4E4E4"
+        app:cardShadowEndColor="#F7F7F8"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:cardLightDirection="top">
+
+    <RelativeLayout
+        android:id="@+id/item_allproject_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_allproject_view"
+        android:padding="@dimen/dp_10"
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/address_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/item_allproject_logo"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@mipmap/exchange" />
+        <TextView
+            android:id="@+id/address_name"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/title_address"
+            android:textSize="@dimen/sp_14"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@id/item_allproject_logo"
+            android:textColor="@color/home_native_selected"
+            />
+
+        <TextView
+            android:id="@+id/address_id"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/address_name"
+            android:layout_toRightOf="@id/item_allproject_logo"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:ellipsize="middle"
+            android:maxEms="12"
+            android:singleLine="true"
+            android:textSize="12dp"
+            android:textColor="@color/hottitle"
+            />
+
+            <com.gikee.app.views.IconView
+                android:id="@+id/copy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address_name"
+                android:layout_toRightOf="@+id/address_id"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:textSize="16sp"
+                android:textColor="@color/gray_c7"
+                android:text="&#xe615;"/>
+
+            <LinearLayout
+                android:id="@+id/more_opera"
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:background="@mipmap/more_acount"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/trade_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_below="@+id/more_opera"
+                android:textColor="@color/white"
+                android:textSize="7sp"
+                android:text="65"
+                android:background="@drawable/shapr_btn_red"
+                />
+
+
+
+        </RelativeLayout>
+
+        <com.gikee.app.views.MyBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/assets"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_below="@+id/address_layout"
+            />
+
+        <LinearLayout
+            android:id="@+id/price_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_below="@+id/address_layout"
+            >
+            <com.gikee.app.views.MyBoldTextView
+                android:id="@+id/balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_14"
+                android:layout_gravity="right"
+
+                />
+            <com.gikee.app.views.MyBoldTextView
+                android:id="@+id/balance_usd"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_width="wrap_content"
+                android:layout_gravity="right"
+                android:textSize="@dimen/sp_14"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:id="@+id/loading"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_below="@+id/address_layout"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+    </com.meetsl.scardview.SCardView>
+
+</LinearLayout>

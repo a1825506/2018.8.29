@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/gray_bg"
+    android:layout_height="match_parent">
+
+    <com.gikee.app.views.AutoHeightViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </com.gikee.app.views.AutoHeightViewPager>
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabslayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:tabMode="fixed"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/title_color"
+        app:tabSelectedTextColor="@color/title_color"
+        app:tabTextColor="@color/gray_33" />
+
+
+
+</android.support.constraint.ConstraintLayout>

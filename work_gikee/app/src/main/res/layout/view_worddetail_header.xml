@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/word_detail_linechart_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/word_detail_hour"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray_bg"
+                android:gravity="center"
+                android:text="@string/zh_header_hour"
+                android:textColor="@color/gray_c7"
+                android:textSize="@dimen/sp_content" />
+
+            <TextView
+                android:id="@+id/word_detail_day"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@color/appcolors"
+                android:gravity="center"
+                android:text="@string/zh_header_day"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_content" />
+
+            <TextView
+                android:id="@+id/word_detail_week"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray_bg"
+                android:gravity="center"
+                android:text="@string/zh_header_week"
+                android:textColor="@color/gray_c7"
+                android:textSize="@dimen/sp_content" />
+
+            <TextView
+                android:id="@+id/word_detail_month"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray_bg"
+                android:gravity="center"
+                android:text="@string/zh_header_month"
+                android:textColor="@color/gray_c7"
+                android:textSize="@dimen/sp_content" />
+        </LinearLayout>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/word_detail_linechart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginTop="50dp">
+
+        </com.github.mikephil.charting.charts.LineChart>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/word_detail_center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_below="@+id/word_detail_linechart_layout"
+        android:background="@color/gray_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/today_tran_time"
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/sp_msg" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/value"
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/sp_msg" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/value_change"
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/sp_msg" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/turnover"
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/sp_msg" />
+    </LinearLayout>
+
+</RelativeLayout>

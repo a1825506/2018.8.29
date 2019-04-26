@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/alpha_bg"
+
+    android:paddingBottom="@dimen/sp_10">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/markview_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/yValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:visibility="gone"
+        android:layout_below="@+id/xValue"
+        android:text="39"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white"
+        android:textSize="12dp"/>
+    <TextView
+        android:id="@+id/xValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:visibility="gone"
+        android:singleLine="true"
+        android:text="2018-09-21 08:18:21"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white"
+        android:textSize="12dp"/>
+
+</RelativeLayout>

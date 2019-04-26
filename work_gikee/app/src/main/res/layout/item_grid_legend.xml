@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:orientation="horizontal">
+
+    <!--<ImageView-->
+        <!--android:id="@+id/item_grid_legend_img"-->
+        <!--android:layout_width="6dp"-->
+        <!--android:layout_height="6dp"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:src="@mipmap/zhanghu_fenbu_one" />-->
+
+    <com.gikee.app.views.IconView
+        android:id="@+id/item_grid_legend_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:textSize="6sp"
+        android:text="&#xe60e;"/>
+
+    <TextView
+        android:id="@+id/item_grid_legend_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="@string/TOP00"
+        android:textColor="@color/gray_33"
+        android:textSize="@dimen/sp_10" />
+</LinearLayout>

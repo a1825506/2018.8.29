@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+ >
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="@dimen/dp_10"-->
+        <!--android:layout_marginRight="@dimen/dp_10"-->
+        <!--android:layout_marginBottom="@dimen/dp_10"-->
+        <!--android:layout_marginTop="6dp"-->
+        <!--android:paddingLeft="8dp"-->
+        <!--android:paddingRight="8dp"-->
+        <!--android:paddingTop="8dp"-->
+        <!--&gt;-->
+
+        <com.meetsl.scardview.SCardView
+            android:id="@+id/new_price_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardShadowStartColor="#E4E4E4"
+            app:cardShadowEndColor="#F7F7F8"
+            app:cardElevation="5dp"
+            app:cardLightDirection="top">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/trade_layout"
+        android:background="@drawable/item_pressed"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+        >
+
+    <TextView
+        android:id="@+id/table_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/trade_monitoring"
+        android:layout_marginTop="@dimen/dp_10"
+        android:textSize="13sp"
+        android:textColor="@color/gray_33"
+        />
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/trade_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/table_loadmore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/more"
+        android:textSize="10sp"
+        android:textColor="@color/color_9b9b9b"
+        />
+    </LinearLayout>
+        </com.meetsl.scardview.SCardView>
+
+</LinearLayout>

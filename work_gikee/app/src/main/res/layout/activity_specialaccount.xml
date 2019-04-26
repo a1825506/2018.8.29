@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:id="@+id/searche_layput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            >
+
+            <com.gikee.app.views.IconView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_centerVertical="true"
+                android:paddingTop="12dp"
+                android:paddingLeft="@dimen/dp_12"
+                android:paddingBottom="@dimen/dp_12"
+                android:textColor="@color/black"
+                android:text="&#xe604;"/>
+
+
+            <com.gikee.app.views.EditTextWithDel
+                android:id="@+id/search_searchtx"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/shape_btn_gray_bg"
+                android:gravity="left|center_vertical"
+                android:hint="@string/search_special_context"
+                android:layout_toRightOf="@+id/back"
+                android:layout_centerVertical="true"
+                android:imeActionLabel="搜索"
+                android:imeOptions="actionSearch"
+                android:paddingRight="10dp"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:inputType="text"
+                android:textSize="@dimen/sp_11"
+                android:lines="1"
+                android:textColor="@color/gray_33"
+                android:textColorHint="@color/home_navite" />
+
+            <TextView
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="@dimen/dp_12"
+                android:layout_alignParentRight="true"
+                android:text="@string/mp_add_title"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/sp_16"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="75dp"
+        android:background="@color/line_biew"
+        />
+
+    <TextView
+        android:id="@+id/nodata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_line"
+        android:layout_marginTop="70dp"
+        android:text="@string/nodata"
+        android:visibility="gone"
+        android:textSize="@dimen/sp_13"
+        android:gravity="center_horizontal"
+        />
+    <LinearLayout
+        android:id="@+id/hot_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nodata"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+
+        >
+
+            <com.gikee.app.views.MyBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="@string/search_tips"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/exchange"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="交易所"
+                android:textSize="@dimen/sp_13"
+
+                android:gravity="center_horizontal"
+                android:textColor="@color/title_color"
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="10dp"
+                android:background="@color/line_biew"
+                />
+            <TextView
+                android:id="@+id/celebrity"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/sp_13"
+
+                android:layout_height="wrap_content"
+                android:text="名人"
+                android:textColor="@color/title_color"
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="10dp"
+                android:background="@color/line_biew"
+
+                />
+            <TextView
+                android:id="@+id/hack"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/sp_13"
+
+                android:text="黑客"
+                android:textColor="@color/title_color"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_12"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/foundation"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="基金会"
+                android:textSize="@dimen/sp_13"
+
+                android:gravity="center_horizontal"
+                android:textColor="@color/title_color"
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="10dp"
+                android:background="@color/line_biew"
+                />
+            <TextView
+                android:id="@+id/events"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:text="事件"
+                android:textSize="@dimen/sp_13"
+
+                android:textColor="@color/title_color"
+                />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="10dp"
+                android:background="@color/line_biew"
+
+                />
+            <TextView
+                android:id="@+id/mining"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="矿池"
+                android:textSize="@dimen/sp_13"
+                android:textColor="@color/title_color"
+                />
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/hot_recycle"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/history_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hot_search">
+
+        <com.gikee.app.views.MyBoldTextView
+            android:id="@+id/history_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="16dp"
+            android:text="@string/mp_add_hestory"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <com.gikee.app.views.IconView
+            android:id="@+id/hisdelete_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="20dp"
+            android:text="&#xe613;"
+            android:textColor="@color/home_navite" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/history_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/history_title"
+            android:orientation="horizontal"></android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+        android:id="@+id/mineproject_refreshLayout"
+        android:layout_below="@+id/history_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/search_recycleview"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            >
+        </android.support.v7.widget.RecyclerView>
+    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+</RelativeLayout>

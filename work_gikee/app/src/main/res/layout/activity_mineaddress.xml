@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/self_define_ProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        />
+
+
+    <com.github.lzyzsd.jsbridge.BridgeWebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/loading"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:src="@drawable/loading" />
+
+    <!--<ImageView-->
+
+        <!--android:id="@+id/loading"-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="70dp"-->
+        <!--android:layout_gravity="center"-->
+
+        <!--/>-->
+
+</FrameLayout>

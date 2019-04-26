@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/dp_12"
+    android:background="@color/white"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_height="wrap_content">
+
+
+    <com.gikee.app.views.MyBoldTextView
+        android:id="@+id/token_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/hot_img_layout"
+        android:maxEms="8"
+        android:singleLine="true"
+        android:ellipsize="middle"
+        android:textColor="@color/gray_33"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/sp_14"
+        />
+
+
+    <com.gikee.app.views.MyBoldTextView
+        android:id="@+id/token_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/black"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+
+        />
+
+</RelativeLayout>

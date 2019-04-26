@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gikee.app">
+
+    <permission
+        android:name="com.gikee.app.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <permission android:name="com.gikee.app.push.permission.MESSAGE"
+        android:protectionLevel="signature"/>
+
+    <permission android:name="com.gikee.app.permission.C2D_MESSAGE"
+        android:protectionLevel="signature"></permission>
+
+    <uses-permission android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE"/>
+
+    <uses-permission android:name="com.gikee.app.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+    <!--<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />-->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+
+    <!-- 兼容flyme5.0以下版本，魅族内部集成pushSDK必填，不然无法收到消息-->
+    <uses-permission android:name="com.meizu.flyme.push.permission.RECEIVE"/>
+
+    <uses-permission android:name="com.gikee.app..push.permission.MESSAGE"/>
+
+
+    <uses-permission android:name="com.meizu.c2dm.permission.RECEIVE" />
+
+    <uses-permission android:name="com.gikee.app.permission.C2D_MESSAGE"/>
+
+
+<!--
+ android:icon="@mipmap/app_launcher"
+
+
+android:label="@string/app_name"
+ -->
+
+    <application
+        android:name=".base.GikeeApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_launcher"
+        android:supportsRtl="true"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".activity.HomePageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden">
+
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <data
+                android:host="com.gikee.app"
+                android:path="/notification"
+                android:scheme="wonderfullpush" />
+        </intent-filter>
+
+
+        </activity>
+
+
+        <!--友盟多渠道打包-->
+        <meta-data android:value="5b75373af43e48206b000235" android:name="UMENG_APPKEY"/>
+        <!--value的值填写渠道名称，例如yingyongbao。这里设置动态渠道名称变量-->
+        <!--<meta-data android:value="${UMENG_CHANNEL_VALUE}" android:name="UMENG_CHANNEL"/>-->
+
+        <!--魅族push应用定义消息receiver声明 -->
+        <receiver android:name="com.gikee.app.receiver.MeizuTestReceiver">
+            <intent-filter>
+                <!-- 接收push消息 -->
+                <action android:name="com.meizu.flyme.push.intent.MESSAGE" />
+                <!-- 接收register消息 -->
+                <action android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK" />
+                <!-- 接收unregister消息-->
+                <action android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK" />
+                <!-- 兼容低版本Flyme3推送服务配置 -->
+                <action android:name="com.meizu.c2dm.intent.REGISTRATION" />
+                <action android:name="com.meizu.c2dm.intent.RECEIVE" />
+
+                <category android:name="${applicationId}"></category>
+            </intent-filter>
+        </receiver>
+
+
+        <!--华为-->
+
+        <receiver android:name="com.gikee.app.receiver.HUAWEIPushRevicer" >
+            <intent-filter>
+                <!-- 必须,用于接收TOKEN -->
+                <action android:name="com.huawei.android.push.intent.REGISTRATION" />
+            </intent-filter>
+        </receiver>
+
+        <!--oppo推送-->
+
+        <service
+            android:name="com.coloros.mcssdk.PushService"
+            android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE">
+            <intent-filter>
+                <action android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE"/>
+            </intent-filter>
+        </service>
+
+
+        <!--小米push-->
+        <receiver
+            android:exported="true"
+            android:name="com.gikee.app.receiver.DemoMessageReceiver">
+            <!--这里com.xiaomi.mipushdemo.DemoMessageRreceiver改成app中定义的完整类名-->
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+
+
+
+
+        <activity
+            android:name=".activity.MPEditCollectActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name=".activity.ProjectDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+
+
+        <activity
+            android:name=".activity.ZhanghuNumActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.SearchActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:screenOrientation="portrait"></activity>
+
+
+
+        <activity
+            android:name=".activity.MineContactActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+
+
+
+
+        <activity
+            android:name=".activity.MPEditTrandActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name=".activity.LeaderboardActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.AddressDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name=".activity.ETHAddressDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name=".activity.BTCAddressDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.EOSAddressDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.AddProjectActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name=".activity.MineAddressActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+
+
+        <activity
+            android:name=".activity.BTCTradeDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name=".activity.UpdateAddressActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.MyAddressWebviewActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name="com.gikee.app.views.MainDemoActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.ExchangeDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.SettingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name=".activity.ExchangeMonitorActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+
+
+        <activity
+            android:name=".activity.SpecialTradeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.Top100CurrencyActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name=".activity.OwnerDistributeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.TradeDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.UpgradeDialogActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name=".activity.SpecialTradeDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.TradeListActivty"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.ExchangeAccountActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+
+
+        <activity
+            android:name=".activity.Top100TradeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.SpecialAccountSearchActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+
+
+        <activity
+            android:name=".activity.AccountDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+
+
+        <activity
+            android:name=".activity.TopPlayerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name=".activity.TransactionDistributionActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name="com.gikee.app.wxapi.WXEntryActivity"
+            android:launchMode="singleTask"
+            android:exported="true" />
+
+
+        <activity android:name="com.tencent.tauth.AuthActivity"
+            android:noHistory="true"
+            android:launchMode="singleTask" >
+        　　<intent-filter>
+        　　　　<action android:name="android.intent.action.VIEW" />
+        　　　　<category android:name="android.intent.category.DEFAULT" />
+        　　　　<category android:name="android.intent.category.BROWSABLE" />
+        　　　　<data android:scheme="tencent1107712777" />
+        　　</intent-filter>
+    </activity>
+
+
+    <activity android:name="com.tencent.connect.common.AssistActivity"
+        android:screenOrientation="portrait"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name=".activity.WelcomeActivity"
+
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name="activity.MipushTestActivity"
+            android:launchMode="singleTask"
+            android:exported="true" />
+
+
+
+<!--友盟集成新浪分享-->
+        <activity
+            android:name="com.umeng.socialize.media.WBShareCallBackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:exported="false"
+            >
+        </activity>
+        <activity android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"
+            >
+
+        </activity>
+        <activity
+            android:launchMode="singleTask"
+            android:name="com.sina.weibo.sdk.share.WbShareTransActivity">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+
+
+        <activity
+            android:name=".activity.AddressDetailWebviewActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name=".activity.GuideActivity"
+
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+
+
+        <activity
+            android:name=".activity.VersionUpdateActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".activity.RemindDetailActivty"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+
+
+
+        <receiver android:name=".receiver.NetStatusReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+
+        <service
+            android:name="com.gikee.app.service.AppUpdateCheckService"></service>
+
+
+        <service
+            android:name="com.gikee.app.service.AppUpgradeService"></service>
+        <service
+            android:name="com.gikee.app.service.WebSocketService"></service>
+
+        <service
+            android:name="com.gikee.app.service.AccountBalanceService"></service>
+
+
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+
+        <meta-data
+            android:name="com.huawei.hms.client.appid"
+            android:value="appid=100415021" />
+    </application>
+
+</manifest>

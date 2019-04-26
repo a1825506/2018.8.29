@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_12"
+    android:background="@color/white"
+    android:layout_marginLeft="@dimen/dp_12"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:background="@color/e8e9f0"
+        android:id="@+id/title_layout"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+        android:paddingTop="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_12"
+        >
+        <TextView
+            android:id="@+id/token_trade_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_14"
+            android:text="@string/token_trade"
+            android:textColor="@color/gray_33"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/token_trade_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/sp_14"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/from_layout"
+        android:paddingTop="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_12"
+        android:layout_below="@+id/title_layout"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+        >
+        <TextView
+            android:id="@+id/token_trade_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_14"
+            android:text="@string/token_trade"
+            android:textColor="@color/gray_33"
+            android:layout_centerVertical="true"
+            />
+        <com.gikee.app.views.MyBoldTextView
+            android:id="@+id/from_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/token_trade_from"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginLeft="24dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/Blue"
+            android:textSize="@dimen/sp_14"
+            />
+
+        <View
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/from_value"
+            android:background="@color/line_biew"
+            android:layout_marginTop="@dimen/dp_5"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/to_layout"
+        android:visibility="gone"
+        android:layout_below="@+id/from_layout"
+
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+        android:paddingTop="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_12"
+        >
+        <TextView
+            android:id="@+id/token_trade_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/gray_33"
+            android:layout_centerVertical="true"
+            android:text="@string/token_trade"
+            />
+
+        <com.gikee.app.views.MyBoldTextView
+            android:id="@+id/to_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/token_trade_to"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginLeft="24dp"
+            android:text="0xe610d9eccfc5a6b062ffbf403a2cfd756c62dcd8"
+            android:layout_centerVertical="true"
+            android:textColor="@color/Blue"
+            android:textSize="@dimen/sp_14"
+            />
+
+        <View
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/to_value"
+            android:background="@color/line_biew"
+            android:layout_marginTop="@dimen/dp_5"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/token_layout"
+
+        android:layout_below="@+id/to_layout"
+        android:paddingTop="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_12"
+        android:visibility="gone"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+        >
+        <TextView
+            android:id="@+id/token_trade_token"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/gray_33"
+            android:layout_centerVertical="true"
+            android:text="@string/token_trade"
+            />
+
+        <com.gikee.app.views.MyBoldTextView
+            android:id="@+id/token_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/token_trade_token"
+
+            android:layout_marginLeft="24dp"
+            android:text=""
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14"
+            />
+
+        <TextView
+            android:id="@+id/token_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/token_value"
+            android:layout_marginLeft="@dimen/dp_12"
+
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14"
+            />
+
+
+        <View
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/token_value"
+            android:background="@color/line_biew"
+            android:layout_marginTop="@dimen/dp_5"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/remark_layout"
+        android:visibility="gone"
+        android:layout_below="@+id/token_layout"
+        android:paddingTop="@dimen/dp_12"
+        android:paddingBottom="@dimen/dp_12"
+        android:paddingLeft="@dimen/dp_12"
+        android:paddingRight="@dimen/dp_12"
+        >
+        <TextView
+            android:id="@+id/remark_trade_token"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray_33"
+            android:textSize="@dimen/sp_14"
+            />
+
+        <com.gikee.app.views.MyBoldTextView
+            android:id="@+id/remark_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_40"
+            android:layout_marginLeft="24dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_14"
+            />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

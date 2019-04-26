@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout
+    android:id="@+id/layout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:padding="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <TextView
+        android:id="@+id/exchange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OKEX"
+        android:textSize="@dimen/sp_11"
+        />
+
+    <LinearLayout
+        android:id="@+id/symbol_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/exchange"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BTC"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/transaction_pair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="12sp"
+            android:layout_marginLeft="@dimen/dp_5"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/turnover_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/symbol_layout"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:id="@+id/turnover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/turnover_"
+            android:textSize="@dimen/sp_10"
+            />
+        <TextView
+            android:id="@+id/turnover_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:text="$1.84.23亿"
+            android:textSize="@dimen/sp_10"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/transaction_amount_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        >
+
+        <LinearLayout
+            android:id="@+id/amount_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="3,623.55"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/amount_USD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="≈$3,623.55"
+                android:textSize="10sp"
+                android:layout_gravity="right"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/quatechange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_btn_tradecount"
+            android:text="12.76%"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_13"
+            />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp_12"
+    android:background="@mipmap/bg_06"
+    android:scaleType="centerCrop"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/jump"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/jump"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_alignParentRight="true"
+        />
+
+    <com.gikee.app.views.MyBoldTextView
+        android:id="@+id/choose_unit"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/choose_unit"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/dp_20"
+        android:textSize="22sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/jump"
+
+        />
+
+    <TextView
+        android:id="@+id/choose_util_info"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/choose_unit_info"
+        android:textSize="12sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/choose_unit"
+        />
+
+    <RelativeLayout
+        android:id="@+id/unit_img"
+        android:layout_below="@+id/choose_util_info"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        >
+        <FrameLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+
+            >
+            <ImageView
+                android:id="@+id/cny_img"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@mipmap/cny"
+                android:scaleType="centerCrop"
+                android:padding="@dimen/dp_5"
+                />
+            <ImageView
+                android:id="@+id/cny_choose"
+                android:layout_gravity="right"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@mipmap/red_true"
+                />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+
+            >
+
+        <ImageView
+            android:id="@+id/usd_img"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@mipmap/usd"
+            android:scaleType="centerCrop"
+            android:padding="@dimen/dp_5"
+
+            />
+            <ImageView
+                android:id="@+id/usd_choose"
+                android:layout_gravity="right"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@mipmap/green_true"
+                android:visibility="gone"
+                />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/unit_choose_img"
+        android:layout_below="@+id/unit_img"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+        <FrameLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            >
+        <ImageView
+            android:id="@+id/quate_cny_img"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@mipmap/red_rose"
+            android:padding="@dimen/dp_5"
+
+            />
+            <ImageView
+                android:id="@+id/quate_cny_choose"
+
+                android:layout_gravity="right"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@mipmap/red_true"
+                />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            >
+
+        <ImageView
+            android:id="@+id/quate_usd_img"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@mipmap/green_rose"
+            android:padding="@dimen/dp_5"
+
+            />
+            <ImageView
+                android:id="@+id/quate_usd_choose"
+                android:layout_gravity="right"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@mipmap/green_true"
+                android:visibility="gone"
+
+                />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/setting"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/setting_comp"
+        android:textColor="@color/red"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+</RelativeLayout>

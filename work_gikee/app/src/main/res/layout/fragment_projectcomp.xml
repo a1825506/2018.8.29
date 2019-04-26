@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+        android:id="@+id/fm_all_shuju_refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        >
+
+
+    <android.support.v7.widget.RecyclerView
+        android:padding="@dimen/dp_12"
+        android:id="@+id/project_recycle"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabslayout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_list_item"
+        android:layout_below="@+id/fm_all_shuju_refreshLayout"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        app:tabIndicatorColor="@color/title_color"
+        app:tabSelectedTextColor="@color/title_color"
+        app:tabTextColor="@color/gray_33"
+        app:tabMode="scrollable"
+
+        />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dp_12"
+        android:visibility="gone"
+        android:layout_below="@+id/tabslayout"
+        >
+
+        <TextView
+            android:id="@+id/txt_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price_us"
+            android:visibility="gone"
+            android:textSize="@dimen/sp_10"
+            />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@mipmap/blackline"
+            app:layout_constraintLeft_toRightOf="@+id/txt_price"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_price"
+            app:layout_constraintTop_toTopOf="@+id/txt_price"
+            />
+
+
+
+        <LinearLayout
+            android:id="@+id/layout_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/btn_white_appcolor_5"
+            app:layout_constraintRight_toRightOf="parent"
+
+            >
+
+            <TextView
+                android:id="@+id/text_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/last_month"
+                android:textSize="@dimen/sp_10"
+
+                />
+            <ImageView
+                android:id="@+id/img_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:background="@mipmap/down"
+                />
+
+        </LinearLayout>
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_choosedate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_below="@+id/title_layout"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_12"/>
+
+        <!--<View-->
+            <!--android:id="@+id/view_background"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/alpha_bg" />-->
+    </LinearLayout>
+
+    <com.gikee.app.views.MyLineChart
+        android:id="@+id/linechart"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_below="@+id/layout_choosedate"
+        android:layout_height="180dp">
+    </com.gikee.app.views.MyLineChart>
+
+
+    <LinearLayout
+        android:id="@+id/markerview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_below="@+id/tabslayout"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_markerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_12"
+            >
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/index_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dp_12"
+        android:layout_below="@+id/linechart"
+        >
+        <TextView
+            android:id="@+id/index_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_14"
+            android:text="@string/indicator_data"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/index_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_10"
+            app:layout_constraintRight_toRightOf="parent"
+
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/index_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/index_layout"
+            android:paddingLeft="@dimen/dp_12"
+            android:paddingRight="@dimen/dp_12"
+            android:paddingBottom="@dimen/dp_12"
+            />
+
+
+
+
+
+
+
+</RelativeLayout>

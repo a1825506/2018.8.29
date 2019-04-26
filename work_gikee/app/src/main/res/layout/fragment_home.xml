@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+
+
+        <ImageView
+            android:id="@+id/img_homelogo"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="@dimen/dp_10"
+            app:srcCompat="@mipmap/logo" />
+
+        <LinearLayout
+            android:id="@+id/search"
+            android:visibility="gone"
+            android:layout_height="33dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_below="@+id/img_homelogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@drawable/shape_btn_red"
+            >
+
+            <com.gikee.app.views.IconView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/sp_16"
+                android:text="&#xe611;"/>
+
+            <TextView
+                android:id="@+id/search_btc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:textSize="@dimen/sp_11"
+                android:text="@string/search_context"
+                android:textColor="@color/gray_33"
+                />
+
+
+
+
+            <com.gikee.app.views.EditTextWithDel
+                android:id="@+id/search_context"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:layout_width="0dp"
+                android:layout_weight="4.5"
+                android:background="@drawable/shape_edit_nobackbround"
+                android:gravity="left|center_vertical"
+                android:hint= "@string/search_context"
+                android:imeActionLabel="搜索"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:textSize="@dimen/sp_11"
+                android:lines="1"
+                android:textColor="@color/white"
+                android:textColorHint="@color/home_navite" />
+            <RelativeLayout
+                android:id="@+id/search_layout"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:visibility="gone"
+                android:background="@drawable/shape_search_ico"
+                android:layout_toRightOf="@+id/search_context"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                >
+                <!--<ImageView-->
+                <!--android:id="@+id/searche_img"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:background="@mipmap/search_gray"-->
+                <!--/>-->
+
+                <com.gikee.app.views.IconView
+                    android:id="@+id/searche_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/F5C"
+                    android:text="&#xe611;"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabIndicatorColor="@color/title_color"
+            android:layout_below="@+id/search"
+            app:tabSelectedTextColor="@color/title_color"
+            app:tabMode="scrollable"
+            app:tabTextColor="@color/gray_33"
+            ></android.support.design.widget.TabLayout>
+
+        <View
+            android:id="@+id/tab_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_biew"
+            android:layout_below="@+id/tablelayout"
+
+            />
+
+
+
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_line"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+                <com.gikee.app.views.AutoHeightViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                </com.gikee.app.views.AutoHeightViewPager>
+
+
+
+            <!--基础链链上指标-->
+            <RelativeLayout
+                android:id="@+id/all_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:background="@color/white"
+                >
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/base_tablelayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:tabIndicatorColor="@color/title_color"
+                    app:tabTextAppearance="@style/TabLayoutTextStyle"
+                    app:tabPadding="3dp"
+                    app:tabMode="scrollable"
+                    app:tabSelectedTextColor="@color/title_color"
+                    ></android.support.design.widget.TabLayout>
+                <View
+                    android:id="@+id/base_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_biew"
+                    android:layout_below="@+id/base_tablelayout"
+
+                    />
+
+                <com.gikee.app.views.MyBoldTextView
+                    android:id="@+id/text_baseLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chain_indicator"
+                    android:textSize="@dimen/sp_14"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/base_line"
+
+                    />
+
+                <TextView
+                    android:id="@+id/all_deatil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eth_datail"
+                    android:textSize="@dimen/sp_12"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/base_line"
+
+                    />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycle_baseLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_baseLine"
+                    android:layout_marginTop="@dimen/dp_10"
+                    >
+                </android.support.v7.widget.RecyclerView>
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/peice_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/recycle_baseLine"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/txt_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/price_us"
+                        android:textSize="@dimen/sp_10"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/blackline"
+                        app:layout_constraintLeft_toRightOf="@+id/txt_price"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/layout_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:background="@drawable/btn_white_appcolor_5"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/text_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/last_month"
+                            android:textSize="@dimen/sp_10"
+
+                            />
+                        <ImageView
+                            android:id="@+id/img_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_5"
+                            android:background="@mipmap/down"
+
+
+                            />
+
+                    </LinearLayout>
+
+                </android.support.constraint.ConstraintLayout>
+
+                <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+                    android:id="@+id/fm_all_shuju_refreshLayout"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/peice_layout"
+                    android:layout_height="180dp"
+                    >
+
+                <com.gikee.app.views.MyLineChart
+                    android:id="@+id/linechart_baseline"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp">
+
+                </com.gikee.app.views.MyLineChart>
+
+                </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>>
+
+                <LinearLayout
+                    android:id="@+id/markerview_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+
+                    android:layout_below="@+id/text_baseLine"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycle_markerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp_12"
+                        >
+                    </android.support.v7.widget.RecyclerView>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/layout_choosedate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_below="@+id/peice_layout">
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/all_shuju_zhanghu_pop_timedes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:paddingLeft="@dimen/dp_12"
+                            android:text="@string/zh_time_interval"
+                            android:textColor="@color/gray_33"
+                            android:textSize="@dimen/sp_title" />
+
+
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycle_data"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/all_shuju_zhanghu_pop_timedes"
+                            android:layout_marginLeft="@dimen/dp_5"
+                            android:layout_marginRight="@dimen/dp_5">
+
+                        </android.support.v7.widget.RecyclerView>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/all_shuju_zhanghu_pop_cancle"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/alpha_bg" />
+                </LinearLayout>
+
+                <com.gikee.app.views.MyBoldTextView
+                    android:id="@+id/today_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fm_all_shuju_refreshLayout"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:text="@string/today_data"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14"
+                    />
+
+                <TextView
+                    android:id="@+id/today_data_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fm_all_shuju_refreshLayout"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_toRightOf="@+id/today_data"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:text="@string/compared_previous_day1"
+                    android:textSize="@dimen/sp_11"
+                    />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycle_baseLine_today"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/today_data"
+                    android:layout_marginTop="@dimen/dp_10"
+
+                    >
+                </android.support.v7.widget.RecyclerView>
+
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

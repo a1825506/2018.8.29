@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingRight="5dip">
+    <ImageView
+        android:id="@+id/corner_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dip"
+        android:contentDescription="@null" />
+    <com.gikee.app.views.PopMenuMoreListView
+        android:id="@+id/menu_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:divider="@color/line_biew"
+        android:dividerHeight="0.5px"
+        android:focusable="true" />
+</LinearLayout>

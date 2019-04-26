@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginRight="@dimen/dp_10">
+
+
+    <com.meetsl.scardview.SCardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/new_price_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardElevation="5dp"
+        app:cardLightDirection="top"
+        app:cardShadowEndColor="#F7F7F8"
+        app:cardShadowStartColor="#E4E4E4">
+
+
+        <RelativeLayout
+            android:id="@+id/item_fm_all_shuju_one_content"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/item_pressed">
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/item_fm_all_shuju_one_linechart"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dp_12"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginTop="10dp" />
+
+
+            <TextView
+                android:id="@+id/tem_fm_all_shuju_title"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_toRightOf="@+id/item_fm_all_shuju_one_linechart"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:paddingLeft="14dp"
+                android:textColor="@color/gray_33"
+                android:textSize="@dimen/sp_13" />
+
+
+            <RelativeLayout
+                android:id="@+id/value1_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tem_fm_all_shuju_title"
+                android:layout_below="@+id/tem_fm_all_shuju_title"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/item_fm_all_shuju_one_linechart">
+
+                <com.gikee.app.views.RiseNumberTextView
+                    android:id="@+id/item_fm_all_shuju_one_per"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/gray_33"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dp">
+
+
+                    <com.gikee.app.views.IconView
+                        android:id="@+id/chat_flag1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="6dp"
+                        android:text="&#xe60e;"
+                        android:textColor="@color/F398C0"
+                        android:textSize="@dimen/dp_5" />
+
+
+                    <TextView
+                        android:id="@+id/chat_item_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_11" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/change_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tem_fm_all_shuju_title"
+                android:layout_below="@+id/value1_layout"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/item_fm_all_shuju_one_linechart"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:id="@+id/change_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_12">
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/change_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/change_text"
+                    android:text="@string/quoteChange"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/AEAEAE"
+                    android:textSize="@dimen/sp_11">
+
+                </TextView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/value2_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tem_fm_all_shuju_title"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_below="@+id/change_layout"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/item_fm_all_shuju_one_linechart"
+                android:orientation="horizontal">
+
+                <com.gikee.app.views.RiseNumberTextView
+                    android:id="@+id/item_fm_all_shuju_one_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:paddingLeft="12dp"
+                    android:textColor="@color/AEAEAE"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="2dp">
+
+
+                    <com.gikee.app.views.IconView
+                        android:id="@+id/chat_flag2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="6dp"
+                        android:text="&#xe60e;"
+                        android:textColor="@color/piechat5"
+                        android:textSize="@dimen/dp_5" />
+
+
+                    <TextView
+                        android:id="@+id/chat_item_title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/AEAEAE"
+                        android:textSize="@dimen/sp_11" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </com.meetsl.scardview.SCardView>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomTablayout">
+        <attr name="textNormalColor" format="color"/>
+        <attr name="textSelectedColor" format="color"/>
+        <attr name="textNormalSize" format="dimension"/>
+        <attr name="textSelectedSize" format="dimension"/>
+        <attr name="backGroundColor" format="color"/>
+        <!--addforindicator为true，则添加，默认为true ，为false，默认不添加indicator-->
+        <attr name="addforindicator" format="boolean"/>
+        <!--addforindicator为true，则平均，默认为false ，为false，默认不平均indicator-->
+        <attr name="averageforindicator" format="boolean"/>
+        <attr name="indicatorColor" format="color"/>
+        <attr name="indicatorWidth" format="dimension"/>
+        <attr name="indicatorHeight" format="dimension"/>
+    </declare-styleable>
+</resources>

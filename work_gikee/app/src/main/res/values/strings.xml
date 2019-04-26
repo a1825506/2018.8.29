@@ -1,0 +1,974 @@
+<resources>
+
+    <string name="app_name">Gikee</string>
+
+
+    <!--首页-->
+    <string name="title_mine">个人</string>
+
+    <string name="title_mineproject">项目</string>
+    <string name="title_home">首页</string>
+    <string name="title_address">监控账户</string>
+
+
+
+
+    <!--全部项目-->
+    <string name="ap_title">全部项目</string>
+    <string name="ap_zhnum">账户总数</string>
+    <string name="ap_newzh">新增账户</string>
+    <string name="ap_activezh">活跃账户</string>
+    <string name="ap_transationnum">交易笔数</string>
+    <string name="ap_transation">交易总量</string>
+
+    <string name="ap_allzhnum">总账户数：</string>
+
+
+
+    <!--全部项目-今日新增账户-->
+    <string name="today_add_title">今日新增账户</string>
+    <string name="today_add_headtx">截止区块：</string>
+    <string name="today_add_nodata">没有数据</string>
+    <string name="today_add_add">新增</string>
+    <string name="today_active_date">日期</string>
+    <string name="today_active_active">活跃</string>
+    <string name="today_active_user">活跃账户</string>
+    <string name="today_active_title">今日活跃账户</string>
+    <string name="today_tran_title">今日交易笔数</string>
+    <string name="today_tran_time">时间</string>
+    <string name="today_tran_num">交易笔数</string>
+    <string name="today_tran_des">笔数</string>
+    <!--全部项目-持币账户-->
+    <string name="zh_header_title">持币账户</string>
+    <string name="zh_zh_des">账户</string>
+    <string name="zh_header_minute">5分钟</string>
+    <string name="zh_header_hour">小时</string>
+    <string name="zh_header_day">日</string>
+    <string name="zh_header_week">周</string>
+    <string name="zh_header_month">月</string>
+    <string name="zh_header_date">日期</string>
+    <string name="zh_header_ownnum">持币地址数</string>
+    <string name="zh_title">持币账户数</string>
+    <string name="zh_time_interval">时段</string>
+    <string name="zh_start">开始</string>
+    <string name="zh_end">截止</string>
+    <string name="zh_week">7天</string>
+    <string name="zh_month">30天</string>
+    <string name="zh_twomonth">60天</string>
+    <string name="zh_halfyear">半年</string>
+    <string name="zh_year">一年</string>
+    <!--全部项目-新增账户-->
+    <string name="zh_newadd_title">新增账户</string>
+    <string name="zh_newadd_addnum">新增账户数</string>
+
+    <!--全部项目-交易数-->
+    <string name="zh_transactionnum_title">链上交易数</string>
+    <string name="zh_transactionnum_addnum">新增链上交易数</string>
+    <!--全部项目-交易量-->
+    <string name="zh_transaction_title">链上交易量</string>
+    <string name="zh_transaction_addnum">新增链上交易量</string>
+    <!--全部项目-活跃账户-->
+    <string name="zh_active_title">活跃账户</string>
+    <string name="zh_active_addnum">活跃账户数</string>
+    <!--全部项目-TOP100账户持币-->
+    <string name="zh_top_title">排名</string>
+    <string name="zh_top_addr">排名</string>
+    <string name="zh_top_num">账户</string>
+    <string name="zh_top_bili">持币量</string>
+    <string name="zh_top_change">持币占比</string>
+    <!--全部项目-账户分布-->
+    <string name="zh_zhfb_title">持币账户分布</string>
+    <string name="zh_zhfb_fanwei">范围</string>
+    <string name="zh_zhfb_cbnum">持币数量</string>
+    <string name="zh_zhfb_cbpie">持币比例</string>
+    <!--全部项目-交易笔数分布-->
+    <string name="zh_jybs_title">链上交易笔数分布</string>
+    <string name="zh_jybs_guimo">规模</string>
+    <string name="zh_jybs_num">交易笔数</string>
+
+    <!--全部项目-交易量分布-->
+    <string name="zh_jyl_title">链上交易量分布</string>
+    <string name="bili">占比</string>
+
+
+    <!--我的项目-->
+    <!--我的项目-首页-->
+    <string name="mp_title">我的项目</string>
+    <string name="mp_footer">+添加、取消、排序我的项目 ></string>
+    <string name="search_context">搜索BTC、ETH、EOS上的项目、账户、交易ID</string>
+    <string name="search_special_context">请输入交易所、名人、事件</string>
+    <string name="browse">近期热搜</string>
+
+    <!--我的项目-编辑-->
+    <string name="mp_edit_title">编辑项目</string>
+    <string name="ma_edit_title">编辑账户</string>
+    <string name="ma_edit_pname">账户名称</string>
+    <string name="mp_edit_pname">项目名称</string>
+    <string name="mp_edit_coll">关注</string>
+    <string name="mp_edit_top">置顶</string>
+    <string name="mp_edit_sort">排序</string>
+    <string name="mp_edit_add">+ 添加</string>
+
+    <!--我的项目-添加-->
+    <string name="mp_add_title">搜索</string>
+    <string name="mp_add_hot">热门项目</string>
+    <string name="mp_add_hestory">历史记录</string>
+    <string name="mp_add_cancle">取消</string>
+    <string name="mp_add_des1">这个%1$s藏的太深了，我们正在努力挖掘</string>
+
+    <!--个人中心-->
+    <string name="mine_login">注册／登录</string>
+    <string name="mine_password">修改密码</string>
+    <string name="mine_warning">消息通知</string>
+    <string name="mine_quate">红涨绿跌</string>
+    <string name="mine_language">多语言</string>
+    <string name="mine_telephone">联系我们</string>
+    <string name="mine_share">推荐给朋友</string>
+    <string name="mine_edition">当前版本</string>
+
+    <!--个人中心-联系我们-->
+    <string name="mine_contact_wechat">微信</string>
+    <string name="wechat_public">微信公众号</string>
+    <string name="twitter">Twitter</string>
+    <string name="dianbao">电报群</string>
+    <string name="mine_contact_weibo">微博</string>
+    <string name="mine_contact_email">Email</string>
+    <string name="wechat_friends">朋友圈</string>
+    <string name="wechat_qq">QQ交流群</string>
+
+    <string name="mine_contact_facebook">Facebook</string>
+    <!--登录-->
+    <string name="login_login">登录</string>
+    <string name="login_regist">注册</string>
+    <string name="login_email">请输入邮箱地址</string>
+
+    <string name="login_emailtitle">邮箱登录</string>
+    <string name="login_password">请输入密码</string>
+    <string name="confirm_password">请输入密码</string>
+    <string name="login_forget">忘记密码？</string>
+    <!--注册-->
+    <string name="regist_sure">完成</string>
+    <string name="regist_findback">找回密码</string>
+    <string name="regist_repeat_password">请重新输入密码</string>
+    <string name="regist_des1">点击完成即表示同意</string>
+    <string name="regist_des2">《服务协议及隐私政策》</string>
+
+
+    <string name="dg_choseico_cancel">取消</string>
+
+    <string name="dg_chose_unit_china_des">人民币</string>
+    <string name="dg_chose_unit_china">人民币 CNY</string>
+    <string name="dg_chose_unit_america_des">美元</string>
+    <string name="dg_chose_unit_america">美元 USD</string>
+    <string name="dg_chose_language_chana">简体中文</string>
+    <string name="dg_chose_language_english">English</string>
+
+    <string name="dg_uploadcomplete_sure">确认</string>
+
+    <string name="dg_exit_sure">退出账户</string>
+    <string name="recycler_nomore">更多链上数据，正在努力挖掘中...</string>
+
+    <!--pop文字-->
+    <string name="pop_share">分享</string>
+
+    <!--Toast提示文字-->
+    <string name="toast_exitapp">再按一次退出程序</string>
+    <string name="toast_emptyhistory">历史记录为空</string>
+    <string name="toast_clearhistory_sure">清空成功</string>
+    <string name="hot_project">热门项目</string>
+    <string name="leaderboard">ERC20 排行榜</string>
+    <string name="leader">排行</string>
+    <string name="top50">TOP50排名</string>
+    <string name="trade">交易量</string>
+    <string name="value">市值</string>
+    <string name="value_change">市值变化</string>
+    <string name="turnover">24H成交额</string>
+    <string name="usrjoin">用户参与度</string>
+    <string name="trade_live">交易活跃度</string>
+    <string name="leaderby">按交易Txhash数量排序</string>
+    <string name="collect_project">暂无收藏项目</string>
+    <string name="collect">收藏</string>
+    <string name="collected">已收藏</string>
+    <string name="trade_lastweek">最近一周交易</string>
+    <string name="trade_time">交易时间</string>
+    <string name="trade_num">交易额</string>
+    <string name="address">账户</string>
+    <string name="delete">删除</string>
+    <string name="edit">编辑</string>
+    <string name="update_name">修改备注</string>
+    <string name="save">保存</string>
+    <string name="edittrend">编辑自选 ></string>
+    <string name="trend_name">趋势名称</string>
+    <string name="trade_monitoring">特殊交易监控(近一个月)</string>
+    <string name="more">查看全部</string>
+    <string name="ranking">排名</string>
+    <string name="volume">持币量</string>
+    <string name="ratio">持币占比</string>
+    <string name="newaddress">新增账户</string>
+    <string name="sleepadress">休眠账户</string>
+    <string name="awakeaddress">唤醒账户</string>
+    <string name="range">范围</string>
+    <string name="newversion">当前已经是最新版本</string>
+    <string name="start_download">正在下载</string>
+    <string name="checking">正在检查</string>
+
+    <string name="Downloaded">下载</string>
+    <string name="edit_choose">编辑自选</string>
+    <string name="update_now">立即升级</string>
+    <string name="update_after">稍后再说</string>
+    <string name="cannel">取消</string>
+    <string name="TOP00">头部账户资产分布</string>
+    <string name="onweraddress">持币账户数</string>
+    <string name="loadmore">上拉加载更多...</string>
+    <string name="nomoredata">没有更多数据了</string>
+    <string name="remind">提醒</string>
+    <string name="detail">查看详情</string>
+    <string name="message">提醒</string>
+    <string name="more_addresscollect">多账户转账聚集</string>
+    <string name="more_radiation">发散转账多账户</string>
+    <string name="nocontext">暂无内容</string>
+    <string name="share">分享</string>
+    <string name="yestaday">昨日</string>
+    <string name="lastweek">近一周</string>
+    <string name="lastmonth">近一个月</string>
+    <string name="top100trade">TOP100账户交易频次</string>
+    <string name="Handfeetotl">手续费总消耗</string>
+    <string name="Handfee">平均每笔手续费</string>
+    <string name="diffc">难度</string>
+    <string name="power">算力</string>
+    <string name="jiaoyishouxufei">平均每笔手续费</string>
+    <string name="jiaoyisliang">平均每笔交易量</string>
+
+    <string name="size">规模</string>
+    <string name="tradecount">交易笔数</string>
+    <string name="trade_number">交易笔数</string>
+    <string name="tradenum">交易量</string>
+    <string name="HugeNum">超大额</string>
+    <string name="BigNum">大额</string>
+    <string name="liveaddressnum">活跃账户数</string>
+    <string name="alladdress">总账户数</string>
+    <string name="onweraddressnum">持币地址数</string>
+    <string name="hugeCount">超大单</string>
+    <string name="bigCount">大单</string>
+    <string name="midiumCount">中单</string>
+    <string name="smallCOunt">小单</string>
+    <string name="tinyCount">超小单</string>
+
+
+    <string name="top10">1-10</string>
+    <string name="top50r">11-50</string>
+    <string name="top100">51-100</string>
+    <string name="top1000">101-1000</string>
+
+    <string name="update_check">更新内容</string>
+    <string name="update_info">1、修复已知BUG，提升性能和稳定性</string>
+    <string name="checkout">检查更新</string>
+    <string name="circulation">发行量</string>
+    <string name="circulationrate">流通率</string>
+
+    <string name="address_rank">账户区间</string>
+    <string name="other_a">其他</string>
+    <string name="today">今日</string>
+
+    <string name="tokeninfo">当前数据均来自链上...</string>
+    <string name="collect_success">收藏成功</string>
+    <string name="collect_cannel">取消收藏</string>
+    <string name="ci">次</string>
+    <string name="NO1address">NO.1账户</string>
+    <string name="login_registered">注册/登录</string>
+
+
+
+    <string name="top100_distributed">头部账户资产分布</string>
+    <string name="topDis">持币账户资产分布</string>
+    <string name="specialTrade">特殊交易监控</string>
+    <string name="specialtrade">特殊账户</string>
+    <string name="bigTradeCountDis">大额转账</string>
+    <string name="frequentlyTrade">交易频繁</string>
+    <string name="newAndInactivity">新增与唤醒账户</string>
+    <string name="newCount">新增账户</string>
+    <string name="wakeCount">唤醒账户</string>
+    <string name="inactiveCount">休眠账户</string>
+    <string name="activeDis">活跃账户</string>
+    <string name="trade_vol">交易笔数</string>
+    <string name="marketValue">流通市值</string>
+    <string name="diffPower">矿难度、算力</string>
+    <string name="avgTrdVol">平均每笔交易量</string>
+    <string name="topFreqAddr">账户交易频次排名</string>
+    <string name="tradeVolDis">交易量分布</string>
+    <string name="tradeCountDis">交易笔数分布</string>
+    <string name="allAddr">总账户数</string>
+    <string name="topPlayer">富豪榜</string>
+    <string name="allGas">手续费总消耗</string>
+    <string name="avgGas">平均每笔手续费</string>
+
+
+
+    <string name="allAddr_zh">总账户数</string>
+    <string name="ownAddr_title_zh">持币账户</string>
+    <string name="top100_distributed_zh">头部账户资产分布</string>
+    <string name="topDis_zh">持币账户资产分布</string>
+    <string name="specialTrade_zh">特殊交易监控</string>
+    <string name="newCount_zh">新增账户</string>
+    <string name="wakeCount_zh">唤醒账户</string>
+    <string name="inactiveCount_zh">休眠账户</string>
+    <string name="activeDis_zh">活跃账户</string>
+    <string name="trade_vol_zh">交易笔数</string>
+    <string name="tradenum_zh">交易量</string>
+    <string name="avgTrdVol_zh">平均每笔交易量</string>
+    <string name="topFreqAddr_zh">账户交易频次排名</string>
+    <string name="tradeVolDis_zh">交易量分布</string>
+    <string name="tradeCountDis_zh">交易笔数分布</string>
+    <string name="bigTradeCountDis_zh">大额转账</string>
+    <string name="topPlayer_zh">富豪榜</string>
+
+
+
+
+    <string name="top100_distributed_en">TOP 100 Address Asset Distribution</string>
+    <string name="topDis_en">Coin Holding Asset Distribution</string>
+    <string name="specialTrade_en">Special Transaction Surveillance </string>
+    <string name="specialtrade_en">Special address</string>
+    <string name="bigTradeCountDis_en">Large Transfe</string>
+    <string name="frequentlyTrade_en">Frequent</string>
+    <string name="newAndInactivity_en">Add and Wake Address</string>
+    <string name="newCount_en">New Address</string>
+    <string name="wakeCount_en">Wake Address</string>
+    <string name="inactiveCount_en">Inactive Address</string>
+    <string name="activeDis_en">Active Address</string>
+    <string name="trade_hot_en">Degree of Transaction Popularity</string>
+    <string name="trade_vol_en">Trade Volumme</string>
+    <string name="tradenum_en">Trade Number</string>
+    <string name="topPlayer_en">TopPlayer</string>
+    <string name="ownAddr_title_en">Currency address</string>
+    <string name="marketValue_en">Circulating Value</string>
+    <string name="diffPower_en">Difficulty and Computing Power of Mining</string>
+    <string name="avgTrdVol_en">Per Averaged Transaction</string>
+    <string name="topFreqAddr_en">Ranking of Address Transaction Frequency</string>
+    <string name="tradeVolDis_en">Transaction Volume Distribution</string>
+    <string name="tradeCountDis_en">Total Transaction Distribution</string>
+    <string name="allAddr_en">Numbers of Total Address </string>
+    <string name="price_title_en">Price </string>
+
+
+    <string name="ownAddr_en">Coin Holding Address</string>
+
+
+    <string name="allGas_en">Total Consumption of Transaction Fee</string>
+    <string name="avgGas_en">Averaged Fee Per Transaction</string>
+
+
+    <string name="optional">自选</string>
+    <string name="alltrends">指标趋势</string>
+    <string name="addtrends">账户趋势</string>
+    <string name="tradetrends">交易趋势</string>
+    <string name="info">简况</string>
+
+    <string name="token_type">Token种类</string>
+    <string name="num">数</string>
+    <string name="num_unit">笔</string>
+
+    <string name="installing">安装中</string>
+    <string name="downloadfaild">下载失败</string>
+    <string name="downloading">后台下载中...</string>
+    <string name="nofindprogram">没有找到打开此类文件的程序</string>
+    <string name="findnewVersion">发现新版本</string>
+    <string name="ignoreversion">忽略此版本</string>
+    <string name="reset">重置</string>
+    <string name="share_refuse">分享被拒绝</string>
+    <string name="share_cannel">取消分享</string>
+    <string name="share_success">分享成功</string>
+    <string name="share_exception">分享异常</string>
+
+    <string name="profile">简况</string>
+
+    <string name="currentmarket">当前市场价: </string>
+
+    <string name="choosedate">选择日期</string>
+    <string name="share_context">区块链数字资产监测、浏览及可视化工具</string>
+    <string name="check_address">请检查账户是否正确</string>
+
+
+    <string name="nodata">暂无相关数据</string>
+
+    <string name="net_bad">网络开小差，请下拉刷新试试</string>
+
+    <string name="no_adddata">尚未添加自选</string>
+
+
+    <string name="nominutedata">暂无分钟数据</string>
+
+    <string name="nohourdata">暂无小时数据</string>
+
+    <string name="nodaydata">暂无天数据</string>
+
+    <string name="noweekdata">暂无周数据</string>
+
+    <string name="nomonthdata">暂无月数据</string>
+    <string name="guide_title1">链上数据，即搜即查</string>
+    <string name="guide_title2">一键收藏，数据速看</string>
+    <string name="guide_title3">多维榜单，动态排名</string>
+    <string name="guide_title4">资产异动，实时检测</string>
+    <string name="guide_title5">用数字，读懂区块链</string>
+    <string name="guide_title6">异动监控</string>
+    <string name="guide_title7">账户异动、大单资金实时捕捉，智能提醒</string>
+
+    <string name="tenthousand">万</string>
+    <string name="billion">亿</string>
+    <string name="addproject">+ 添加项目</string>
+    <string name="addaddress">添加账户</string>
+
+    <string name="address_datail"> 账户详情</string>
+    <string name="start_gikee">开启Gikee</string>
+    <string name="start_use">已启用</string>
+    <string name="press_exit">再按一次退出程序</string>
+    <string name="exception">很抱歉,程序出现异常,即将退出.</string>
+    <string name="newtop100">新增账户TOP10占比</string>
+    <string name="search_notnull">查询字段不能为空</string>
+
+    <string name="time_day">日</string>
+    <string name="time_week">周</string>
+    <string name="time_month">月</string>
+    <string name="filenotexist">文件不存在</string>
+    <string name="jinri">今</string>
+    <string name="moredata">没有更多数据</string>
+    <string name="wait_login">注册登录暂未开通，敬请期待</string>
+
+
+    <string name="hello">Hello World, DownloadActivity!</string>
+    <string name="path">下载路径</string>
+    <string name="button">下载</string>
+    <string name="success">下载完成</string>
+    <string name="error">下载失败</string>
+    <string name="sdcarderror">SDCard不存在或者写保护</string>
+    <string name="check_net">请检查网络</string>
+    <string name="noenglish">暂不支持英文版</string>
+
+
+    <!--指标英文-->
+
+    <string name="avgTrdValue">平均每笔交易金额</string>
+    <string name="tradeValue">交易金额</string>
+    <string name="participateAddress">参与交易账户</string>
+    <string name="price_title">价格</string>
+    <string name="top100_title">头部账户资产分布</string>
+    <string name="topDis_title">持币账户资产分布</string>
+    <string name="allAddr_title">总账户数</string>
+    <string name="ownAddr_title">持币账户数</string>
+    <string name="specialTrade_title">特殊交易监控</string>
+    <string name="activeDis_title">活跃账户</string>
+    <string name="topFreqAdd_title">账户交易频次排名</string>
+    <string name="tradeCountDis_title">交易笔数分布</string>
+    <string name="avgTrdVol_title">平均每笔交易量</string>
+    <string name="tradeVolDis_title">交易量分布</string>
+    <string name="bigTradeCountDis_title">大额转账</string>
+    <string name="newAndInactivity_title">新增与唤醒账户</string>
+    <string name="diffPower_title">挖矿难度、算力</string>
+    <string name="tradevolume_title">交易量</string>
+    <string name="tradeCount_title">交易笔数</string>
+    <string name="allGas_title">手续费总消耗</string>
+    <string name="avgGas_title">平均每笔手续费</string>
+    <string name="marketValue_title">流通市值</string>
+
+    <string name="wake_title">唤醒</string>
+
+    <string name="trade_list">交易列表</string>
+
+
+    <string name="hot1">FT冷钱宝账户</string>
+
+    <string name="hot2">假冒sonm项目的账户</string>
+
+    <string name="hot3">砸盘20万枚ETH的巨鲸</string>
+
+    <string name="hot4">Parity钱包的黑客</string>
+
+    <string name="noyestday_trade">该项目昨日无交易</string>
+
+    <string name="getdata">获取数据中</string>
+
+    <string name="remind_datail">详情</string>
+
+    <string name="eth_datail">详情 >></string>
+
+    <string name="share_description">区块链数字资产监测，浏览及可视化工具</string>
+
+    <string name="baseline">基础链</string>
+
+    <string name="history_search">历史搜索</string>
+
+    <string name="share_title">链上数据来源于\n www.gikee.com</string>
+
+    <string name="en_title">英文名</string>
+
+    <string name="ch_title">中文名</string>
+
+    <string name="publish_time">发行时间</string>
+
+    <string name="public_info">公募信息</string>
+
+    <string name="link_info">相关链接</string>
+
+    <string name="trade_hash">交易Hash:</string>
+
+    <string name="from">从</string>
+
+    <string name="from_hash">区块Hash</string>
+
+
+    <string name="to">至</string>
+
+    <string name="in">转入</string>
+
+    <string name="out">转出</string>
+
+    <string name="amount">金额</string>
+
+    <string name="trade_detail">交易详情</string>
+
+    <string name="trade_relationship">交易关系</string>
+
+    <string name="trade_record">交易记录</string>
+
+    <string name="token_balance">Token余额</string>
+
+    <string name="block_height">区块高度</string>
+
+    <string name="status">状态</string>
+
+    <string name="gas_detail">Gas详情</string>
+
+    <string name="gas_limit">Gas 限制</string>
+
+    <string name="gas_used">Gas 费用</string>
+
+    <string name="gas_price">Gas 价格</string>
+
+    <string name="gas_pay">矿工费用</string>
+
+    <string name="token_detail">token详情</string>
+
+    <string name="contract_inside">合约内部转账详情</string>
+
+    <string name="eos_staked">EOS抵押</string>
+
+    <string name="eos_unstaked">EOS赎回</string>
+
+    <string name="eos_refund_time">最后一次赎回生效时间</string>
+
+    <string name="create_account">创建账户</string>
+
+    <string name="create_time">创建时间</string>
+
+    <string name="internet_resources">网络资源</string>
+
+    <string name="ram">内存</string>
+
+    <string name="net">网络</string>
+
+    <string name="rate">使用率：</string>
+
+    <string name="token_transfer">代币转账</string>
+
+    <string name="input">输入</string>
+
+    <string name="output">输出</string>
+
+    <string name="total_account">%1$s 账户</string>
+
+    <string name="assets">资产余额</string>
+
+    <string name="trade_success">交易成功</string>
+
+    <string name="block_time">出块时间</string>
+
+    <string name="confirm_num">确认数</string>
+
+    <string name="block_size">区块大小</string>
+
+    <string name="virtual_size">Virtual Size</string>
+
+    <string name="gas_rate">矿工费率 (BTC / kVB)：</string>
+
+    <string name="expire_date">过期时间:</string>
+
+    <string name="block_hash">区块Hash:</string>
+
+    <string name="token_trade">代币交易</string>
+
+    <string name="remake">备注</string>
+
+    <string name="token">代币</string>
+
+    <string name="eth_asset">ETH资产列表</string>
+
+    <string name="pop_recommendation">热门搜索</string>
+
+    <string name="copied">已复制到粘贴板</string>
+
+    <string name="account_balance">账户余额</string>
+
+    <string name="support_item">*目前支持搜索BTC、ETH、EOS上的项目／账户／交易ID</string>
+
+    <string name="btcaddress"> 中本聪账户</string>
+
+    <string name="binance_address"> 币安ETH账户</string>
+
+    <string name="btc_big"> 比特币大额转账</string>
+
+    <string name="eos_big">block.one EOS账户</string>
+
+    <string name="Fomo3D"> Fomo3D获奖交易</string>
+
+    <string name="recently_launched">近期上线</string>
+
+    <string name="more_item">更多项目</string>
+
+    <string name="rich_list">富豪榜</string>
+
+    <string name="rank_amount">额度</string>
+
+    <string name="clean_history">清除历史记录</string>
+
+    <string name="close">关闭</string>
+
+    <string name="success_status">成功</string>
+
+    <string name="failure_status">失败</string>
+
+    <string name="load_fail">网络开小差，下拉刷新试试</string>
+
+    <string name="rank_com">第%1$s名</string>
+
+    <string name="marketvalue_ratio">市值占比</string>
+
+    <string name="circulation_">流通量</string>
+
+    <string name="avg_price">众筹均价</string>
+
+    <string name="start_time">众筹开始时间</string>
+
+    <string name="end_time">众筹开始时间</string>
+
+    <string name="ico_allocation">ICO分配</string>
+
+    <string name="investor_share">投资者占比</string>
+
+    <string name="token_platform">代币平台</string>
+
+    <string name="count">成功众筹数量</string>
+
+    <string name="success_money">成功众筹金额</string>
+
+    <string name="start_price">开售价格</string>
+
+    <string name="related_info">相关信息</string>
+
+    <string name="browser">浏览器</string>
+
+    <string name="website">官网</string>
+
+    <string name="whitePaper">白皮书</string>
+
+    <string name="hot_title">根据不同维度综合精选的项目</string>
+
+    <string name="added">已添加</string>
+
+    <string name="market_value">流通市值</string>
+
+    <string name="hand_turn">24H换手率</string>
+
+    <string name="eos_account">EOS 账户</string>
+
+    <string name="my_address">我的地址</string>
+
+    <string name="follow_system">跟随系统</string>
+
+    <string name="quoteChange">较前一日</string>
+
+    <string name="reload">重新加载</string>
+
+    <string name="global_market">全球总市值</string>
+
+    <string name="market_title">市值（美元）</string>
+
+    <string name="compared_previous_day">（较前一日）</string>
+
+    <string name="compared_previous_day1">（较前一日涨幅）</string>
+
+
+
+    <string name="last_month"> 近30天</string>
+
+    <string name="power_title"> BTC、BCH、LTC算力</string>
+
+    <string name="all">全部 ></string>
+
+    <string name="today_data">今日数据</string>
+
+    <string name="price_us">价格（美元）</string>
+
+    <string name="price_cny">价格（人民币）</string>
+
+
+    <string name="last_30">近30天</string>
+    <string name="last_90">近90天</string>
+    <string name="last_180">近半年</string>
+    <string name="last_year">近一年</string>
+    <string name="last_threeyear">近三年</string>
+    <string name="last_all">全部</string>
+    <string name="chain_indicator">链上指标</string>
+
+    <string name="pow_rate">算力(EH/s）</string>
+    <string name="pow_rate_eth">算力(KH/s）</string>
+
+    <string name="pow_eth">ETH算力</string>
+    <string name="pow_btc">BTC算力</string>
+    <string name="pow_bch">BCH算力</string>
+    <string name="pow_ltc">LTC算力</string>
+    <string name="market_value_trend">市值趋势</string>
+
+    <string name="market_share">市值占比</string>
+
+    <string name="hash_rate">POW算力</string>
+
+
+    <string name="index_comparison">指标对比</string>
+
+    <string name="index_choose">指标选择</string>
+
+    <string name="event_information">事件资讯</string>
+
+    <string name="project_pk">项目PK</string>
+
+    <string name="my_collection">我的关注</string>
+
+    <string name="add_pk">项目已添加对比</string>
+
+    <string name="cannel_pk">项目已取消对比</string>
+
+    <string name="max_pk">最多五个项目对比</string>
+
+    <string name="indicator_data">指标数据</string>
+
+
+    <string name="index_num">最多两个指标对比</string>
+
+    <string name="search_project">搜索项目</string>
+
+    <string name="day_hight">24h最高</string>
+
+    <string name="day_low">24h最低</string>
+
+    <string name="quote_change">涨跌幅</string>
+
+    <string name="balance">余额</string>
+
+    <string name="currect_balance">当前余额</string>
+
+    <string name="info_markettitle">Gikee.com市值监测</string>
+
+    <string name="info_pricechangetitle">Gikee.com价格监测</string>
+
+    <string name="info_pricechangetitleen">Gikee.com price change monitoring</string>
+
+    <string name="info_markettitleen">Gikee.com market value monitoring</string>
+
+    <string name="info_pricetitle">Gikee.com行情监测</string>
+
+    <string name="info_pricetitleen">Gikee.com price monitoring</string>
+
+    <string name="info_marketcontent">数字货币全球总市值为%1$s美元，同比昨日%2$s:%3$s</string>
+
+    <string name="info_pricechangecontent">%1$s当前价格%2$s美元，同比四小时前%3$s:%4$s</string>
+
+    <string name="info_pricechangecontenten">%1$s current price %2$s USD, compared to four hours ago  %3$s:%4$s</string>
+
+    <string name="info_marketcontenten">The total market value of the world was %1$s US dollars, %2$s %3$s。</string>
+
+
+    <string name="info_pricecontent">%1$s价格为%2$s美元，同比昨日%3$s美元%4$s:%5$s</string>
+
+
+    <string name="info_pricecontenten">The price of %1$s this morning was %2$s US dollars, %3$s %4$s from %5$s US dollars yesterday;</string>
+
+
+    <string name="info_bigChangetitle">%1$s出现链上大额转账，单笔交易量%1$s，交易时间%1$s</string>
+
+    <string name="info_bigChangetitle_en">%1$s has a large amount of money transfer on the chain, a single transaction volume of %1$s, trading time %1$s</string>
+
+    <string name="adds_from">转出地址:</string>
+
+    <string name="adds_to">转入地址:</string>
+
+    <string name="quotes">行情</string>
+
+    <string name="exchange">交易所</string>
+
+    <string name="pair">交易对</string>
+
+    <string name="country">所在国家</string>
+
+    <string name="value_rank">市值%1$s</string>
+
+
+    <string name="platform_profile">平台简况</string>
+
+    <string name="turnover_">成交额</string>
+
+
+    <string name="industry_Trends">行业趋势</string>
+
+    <string name="as_token_balance">代币余额</string>
+
+    <string name="ethtraderecord">交易</string>
+
+    <string name="erc20traderecord">ERC20代币交易</string>
+
+    <string name="inside_the_contract">合约内部</string>
+
+    <string name="noinside_the_contract">暂无合约内部</string>
+
+    <string name="padding">待处理</string>
+
+    <string name="noerc20traderecord">暂无ERC20代币交易</string>
+
+    <string name="contract">合约</string>
+
+    <string name="transfer">转移</string>
+
+    <string name="nextpage">下一页</string>
+
+
+    <string name="token_remove">代币已转移</string>
+
+
+    <string name="send">发送方</string>
+
+
+    <string name="receive">接收方</string>
+
+    <string name="token_count">代币数量</string>
+
+
+    <string name="price_unit">价格单位</string>
+
+    <string name="choose_unit">请选择币价显示类型</string>
+
+
+    <string name="choose_unit_info">方便您浏览行情信息</string>
+
+
+    <string name="jump">跳过</string>
+
+    <string name="setting_comp">设置完成 >></string>
+
+    <string name="global">全球</string>
+
+    <string name="public_chain">公链</string>
+
+
+    <string name="dAPP">DAPP</string>
+    <string name="real_time_data">实时链上数据</string>
+
+
+    <string name="block_info">区块#%1$s</string>
+
+    <string name="clsoe">收起</string>
+
+    <string name="account_monitoring">账户监控</string>
+
+
+
+    <string name="all_choose">全选</string>
+
+    <string name="combined_monitoring">合并监控</string>
+
+    <string name="exchange_account">交易所账户</string>
+
+    <string name="set_nickname">设置昵称</string>
+
+    <string name="edit_nickname">修改昵称</string>
+
+    <string name="input_nick">请输入昵称方便记忆</string>
+
+    <string name="input_account">请输入有效的账户地址</string>
+
+    <string name="add_eth_account">添加ETH账户</string>
+
+    <string name="add_btc_account">添加BTC账户</string>
+
+    <string name="add_eos_account">添加EOS账户</string>
+
+    <string name="check_address_">请检查地址是否正确</string>
+
+    <string name="confirm_add">确认添加</string>
+    <string name="confirm_edit">确认修改</string>
+    <string name="add_acount"> 您还没有可监控的地址，快去添加吧！</string>
+
+    <string name="add_account_tips"> 您可以添加自己的账户地址，也可以添加我们提供的特殊账户，其中包括：交易所账户、名人账户、事件账户等；此外还可以将您的账户或特殊账户上传给我们，审核通过后将加入到我们的特殊账户中分享给所有用户。
+</string>
+
+    <string name="statistics">统计</string>
+
+    <string name="all_acount">全部账户</string>
+
+    <string name="asset_transfer">资产转入</string>
+
+    <string name="asset_transfer_out">资产转出</string>
+
+    <string name="asset_in_count">(共%1$s笔)</string>
+
+    <string name="account_count">共%1$s个账户地址</string>
+
+    <string name="monitor_address">监控%1$s个账户地址</string>
+
+    <string name="my_monitor">我监控的账户</string>
+
+    <string name="no_context_time">您选择的时间段内没有交易，可以试试其他时间段！</string>
+
+
+    <string name="account_type">添加ETH、BTC账户地址</string>
+
+    <string name="upload_account_title">将您的地址上传分享给大家</string>
+
+    <string name="upload_account">上传账户</string>
+
+    <string name="monitor">+ 监控</string>
+
+
+    <string name="monitored">已监控</string>
+
+
+    <string name="search_tips">您可以查看这些内容</string>
+
+    <string name="develop">开发中,敬请期待</string>
+
+
+    <string name="trade_vol_total">总交易笔数</string>
+
+    <string name="trade_total">总交易量</string>
+
+    <string name="add_choose">添加自选</string>
+
+
+    <string name="total_count">总交易笔数：该账户进行资产转入转出的笔数总和</string>
+
+    <string name="total_vol">总交易量：该账户进行资产转入转出的资产数量总和</string>
+
+
+
+
+
+
+
+
+
+
+
+    <!--
+      通配符
+     String learn = String.format(mContext.getString(R.string.total_account), item.getScale());
+    -->
+
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp_12"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:id="@+id/from_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <com.gikee.app.views.MyBoldTextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/to"
+            android:layout_centerVertical="true"
+            />
+
+        <com.gikee.app.views.MyBoldTextView
+            android:id="@+id/item_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contract"
+            android:layout_toLeftOf="@+id/item_value"
+            android:layout_marginRight="@dimen/dp_5"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_10"
+            android:background="@drawable/shape_btn_blue"
+            android:layout_centerVertical="true"
+
+            />
+
+        <com.gikee.app.views.MyBoldTextView
+            android:id="@+id/item_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/copy"
+            android:layout_marginRight="@dimen/dp_5"
+            android:textColor="@color/Blue"
+            android:layout_centerVertical="true"
+
+            android:maxEms="8"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:text="0x1f6adb1eb52e2d8f76159"
+            />
+
+        <com.gikee.app.views.IconView
+            android:id="@+id/copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/gray_c7"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+            android:text="&#xe615;"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/left_img"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@mipmap/hierarchy"
+        android:layout_below="@+id/from_layout"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_10"
+        />
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/trade_recycler"
+        android:layout_below="@+id/from_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_toRightOf="@+id/left_img"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+    <com.gikee.app.views.MyBoldTextView
+        android:id="@+id/more_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="@string/nextpage"
+        android:layout_below="@+id/trade_recycler"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+
+        android:background="@color/line_biew"
+        android:layout_below="@+id/trade_recycler"
+        android:layout_marginTop="30dp"
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent">#00000000</color>
+    <color name="little_blue">#2F9BE9</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="white_transparent">#00FFFFFF</color>
+    <color name="red">#ff7575</color>
+    <color name="green">#a1df79</color>
+    <color name="orange">#81c2f5</color>
+    <color name="appcolors">#403F5C</color>
+
+    <color name="BTC">#3272ff</color>
+    <color name="BTH">#5e8fff</color>
+    <color name="XRP">#87abff</color>
+    <color name="NEM">#aec8ff</color>
+    <color name="IOTA">#d7e3ff</color>
+    <color name="Others">#ebf1ff</color>
+    <color name="NEO">#daeaff</color>
+    <color name="XMR">#b4d5ff</color>
+    <color name="DASH">#8dc1ff</color>
+    <color name="LTC">#66acff</color>
+    <color name="ETH">#3b97ff</color>
+    <color name="gray_toolbar">#c3c3c9</color>
+    <color name="gray_42">#424242</color>
+    <color name="gray_bg">#F8F9F9</color>
+    <color name="gray_f5">#f5f5fa</color>
+    <color name="gray_33">#FF4a4a4a</color>
+    <color name="gray_ed">#ededed</color>
+    <color name="gray_df">#dfdfe4</color>
+    <color name="gray_c7">#c7c7c7</color>
+    <color name="gray_86">#20868698</color>
+    <color name="alpha_bg">#70000000</color>
+    <color name="black">#000000</color>
+
+    <color name="home_navite">#c3c3c3</color>
+    <color name="home_native_selected">#5d5e7b</color>
+    <color name="shape_edit">#F5F5F5</color>
+    <color name="leadertype">#A6ACCF</color>
+    <color name="leadertypeselect">#FFAF2C</color>
+    <color name="leaderby">#9798aa</color>
+    <color name="hottitle">#646464</color>
+    <color name="mineproject">#aeaeae</color>
+    <color name="address_view">#686984</color>
+    <color name="updateaddress">#f7f7f8</color>
+    <color name="color_9b9b9b">#9b9b9b</color>
+    <color name="color_9090">#ff9090</color>
+    <color name="cardview">#f1f1f1</color>
+
+    <color name="gray_line">#e6e6e6</color>
+
+    <color name="welcome_title_item">#9B9B9B</color>
+    <color name="welcome_logo_title">#5D5E7B</color>
+    <color name="line_biew">#F0F0F1</color>
+    <color name="hot_project_title">#4A4A4A</color>
+    <color name="e7e7e7">#e7e7e7</color>
+
+
+
+
+
+
+    <!--饼图-->
+    <color name="piechat1">#f86a6a</color>
+    <color name="pie5">#EC407A</color>
+    <color name="pie6">#AB47BC</color>
+    <color name="C6BC0">#5C6BC0</color>
+    <color name="piechat4">#659be9</color>
+    <color name="A69A">#26A69A</color>
+    <color name="piechat3">#6dc978</color>
+    <color name="pie14">#9CCC65</color>
+    <color name="piechat2">#ffd043</color>
+    <color name="FF7043">#FF7043</color>
+    <color name="C78909">#78909C</color>
+    <color name="pie18">#A1887F</color>
+    <color name="BDBDBD">#BDBDBD</color>
+    <color name="D3B37D">#D3B37D</color>
+
+
+
+
+    <color name="piechat6">#8277E6</color>
+
+
+    <color name="piechat5">#dddddd</color>
+
+
+    <color name="pie1">#FFAF2C</color>
+    <color name="pie2">#FF9800</color>
+    <color name="pie3">#F36C60</color>
+    <color name="pie4">#ef5350</color>
+
+
+    <color name="pie7">#7E57C2</color>
+    <color name="pie8">#7986CB</color>
+    <color name="pie9">#64B5F6</color>
+    <color name="pie10">#4FC3F7</color>
+    <color name="pie11">#4DD0E1</color>
+    <color name="pie12">#80CBC4</color>
+    <color name="pie13">#81C784</color>
+
+    <color name="pie15">#D4E157</color>
+    <color name="pie16">#FFEE58</color>
+    <color name="pie17">#90A4AE</color>
+
+    <color name="pie19">#DFDFE4</color>
+
+    <!--饼图 -->
+    <color name="FFAF2C">#FFAF2C</color>
+    <color name="A1DF79">#4CC27A</color>
+    <color name="C2F5">#6889FF</color>
+    <color name="F398C0">#77828A</color>
+    <color name="DFDFE4">#E7E7E7</color>
+
+
+
+    <color name="FFAF2C50">#50FFAF2C</color>
+    <color name="F398C040">#50F86A6A</color>
+    <color name="A1DF7950">#504CC27A</color>
+    <color name="DFDFE450">#50E7E7E7</color>
+    <color name="C2F550">#506889FF</color>
+
+    <color name="piechat1p">#5077828A</color>
+    <color name="piechat2p">#50ffd043</color>
+    <color name="piechat3p">#506dc978</color>
+    <color name="piechat4p">#50659be9</color>
+    <color name="piechat5p">#50dddddd</color>
+
+    <!--折线图-->
+    <color name="linewave1">#9398C0</color>
+    <color name="linewave2">#FFAF2C</color>
+
+    <color name="upprice">#90DC5F</color>
+
+    <color name="downprice">#FF7575</color>
+
+    <color name="AEAEAE">#AEAEAE</color>
+
+    <color name="FFD693">#FFD693</color>
+
+    //
+    <color name="ABABC1">#ABABC1</color>
+
+    <color name="F5F5F5">#F5F5F5</color>
+    <color name="ffc35f">#ffc35f</color>
+    <color name="F5C">#403F5C</color>
+    <color name="ffaf2c">#ffaf2c</color>
+    <color name="base_line">#363862</color>
+    <color name="ffffff">#ffffff</color>
+
+    <color name="e8e9f0">#e8e9f0</color>
+
+    <color name="activity_titlebat">#448AFF</color>
+
+    <color name="ff9500">#ff9500</color>
+
+
+    <color name="gray_light">#5174ff</color>
+
+    <color name="cbcbcb">#cbcbcb</color>
+
+
+    <color name="ECF3FF">#ECF3FF</color>
+
+
+    <color name="title_color">#d72f2f</color>
+
+
+    <color name="f8f9f9">#f8f9f9</color>
+
+    <color name="f8f9f930">#30FFFFFF</color>
+
+
+
+    <color name="fbeaea">#fbeaea</color>
+
+    <color name="E16767">#E16767</color>
+
+    <color name="E167">#9B9B9B</color>
+
+    <color name="F5A6">#F5A623</color>
+
+    <color name="faa3c">#1faa3c</color>
+
+    <color name="textcolor">#9E9E9E</color>
+
+
+
+
+
+
+
+
+</resources>
